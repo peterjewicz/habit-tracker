@@ -1,2 +1,52 @@
 /* some style */
+/* TODO we need to integrate SASS here, look up how we can hook that into flywheel compilation */
+body, html {
+  padding: 0;
+  margin: 0;
+  background: #444;
+  color: white;
+  font-size: 16px;
+}
 
+h1{font-size: 2.5rem; margin: 0; padding: 0;}
+h2{font-size: 2rem; margin: 0; padding: 0;}
+h3{font-size: 1.5rem; margin: 0; padding: 0;}
+h4{font-size: 1.25rem; margin: 0; padding: 0;}
+
+
+.Header .addNew {
+  cursor: pointer;
+}
+
+
+/* TODO we need to use some reset so we don't have to keep declaring border-box on all elements with padding */
+.Habit {
+  background: #666;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #111;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Habit .title {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Habit .status {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.Habit .button-wrapper {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Habit .button-wrapper button{
+  width: 100px;
+}

@@ -1,10 +1,11 @@
 # habit-tracker
 
-FIXME: Write a one-line description of your library/project.
+Habit tracker app - TODO bring in mobile hooks
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+Simple IOS/Android App for tracking daily goals. May make ability to create weekly/monthly/yearly in the future
+but initial release will just be daily goals.
 
 ## Development
 

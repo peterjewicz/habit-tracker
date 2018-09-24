@@ -1,7 +1,10 @@
 (ns ^:figwheel-hooks habit-tracker.core
   (:require
    [goog.dom :as gdom]
-   [reagent.core :as reagent :refer [atom]]))
+   [reagent.core :as reagent :refer [atom]]
+   [habit_tracker.utils.view_handler :as view_handler]
+   [habit_tracker.components.Habit :as Habit]
+   [habit_tracker.components.New :as New]))
 
 (println "This text is printed from src/habit_tracker/core.cljs. Go ahead and edit it and see reloading in action.")
 
@@ -14,13 +17,17 @@
 (defn get-app-element []
   (gdom/getElement "app"))
 
-(defn hello-world []
-  [:div
-   [:h1 (:text @app-state)]
-   [:h3 "Edit this in sssrc/habit_tracker/core.cljs and watch it change!"]])
+(defn Root []
+  [:div.MainWrapper
+    [:div.Header
+      [:h4.addNew {:on-click #(view_handler/new-view-active)} "Add New Habit +"]]
+   (if (:add-new @view_handler/active-view)
+    (New/render))
+   (if (:dashboard @view_handler/active-view)
+    (Habit/render))])
 
 (defn mount [el]
-  (reagent/render-component [hello-world] el))
+  (reagent/render-component [Root] el))
 
 (defn mount-app-element []
   (when-let [el (get-app-element)]
