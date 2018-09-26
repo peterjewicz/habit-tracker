@@ -36,5 +36,4 @@
     [:input {:type "text"
              :value @new-habit-name
              :on-change #(reset! new-habit-name (-> % .-target .-value))}]
-    [:p {:on-click #(add-new-habit)} "Add Test"]
-    [:p {:on-click #(get-localStorage-keys)} "Get Keys"]])
+    [:p {:on-click #(add-new-habit)} "Add Test"]])

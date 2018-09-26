@@ -7,11 +7,6 @@
   [])
 
 (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))]
-     ; localStorageItems (.-localStorage js/window)]
-
-      ; (js/console.log localStorageItems)
-      ; (map (fn [k] (js/console.log k) localStorageItems))
-      ; (goog.object/forEach localStorageItems (fn [val key obj] (js/console.log key)))
       (defonce habits (atom currentStorage)))
 
 (defn render []
