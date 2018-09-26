@@ -8,8 +8,8 @@
 (defn add-new-habit
   "Adds a new habit to localStorge to pull from later"
   []
-  (.setItem (.-localStorage js/window)
-    (str (js/Math.floor (* (+ 1(js/Math.random)) 1000000))) @new-habit-name)
+    (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))]
+      (.setItem (.-localStorage js/window) "habits" (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name)))))
   (reset! new-habit-name ""))
 
 (defn get-habit
