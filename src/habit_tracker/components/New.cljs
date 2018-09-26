@@ -8,7 +8,8 @@
 (defn add-new-habit
   "Adds a new habit to localStorge to pull from later"
   []
-  (.setItem (.-localStorage js/window) "key" @new-habit-name)
+  (.setItem (.-localStorage js/window)
+    (str (js/Math.floor (* (+ 1(js/Math.random)) 1000000))) @new-habit-name)
   (reset! new-habit-name ""))
 
 (defn get-habit
@@ -22,7 +23,6 @@
   []
   (let [localStorageItems (.-localStorage js/window)
         localStorageLength (.-length localStorageItems)]
-  ; (js/console.log (.length (.-localStorage js/window))))
   (js/console.log localStorageLength)))
 
 

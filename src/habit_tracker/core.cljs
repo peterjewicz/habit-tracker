@@ -4,6 +4,7 @@
    [reagent.core :as reagent :refer [atom]]
    [habit_tracker.utils.view_handler :as view_handler]
    [habit_tracker.components.Habit :as Habit]
+   [habit_tracker.components.Dashboard :as Dashboard]
    [habit_tracker.components.New :as New]))
 
 (println "This text is printed from src/habit_tracker/core.cljs. Go ahead and edit it and see reloading in action.")
@@ -19,12 +20,10 @@
 
 (defn Root []
   [:div.MainWrapper
-    [:div.Header
-      [:h4.addNew {:on-click #(view_handler/new-view-active)} "Add New Habit +"]]
    (if (:add-new @view_handler/active-view)
     (New/render))
    (if (:dashboard @view_handler/active-view)
-    (Habit/render))])
+    (Dashboard/render))])
 
 (defn mount [el]
   (reagent/render-component [Root] el))
