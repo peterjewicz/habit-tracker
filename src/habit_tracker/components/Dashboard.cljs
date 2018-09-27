@@ -1,5 +1,6 @@
 (ns habit_tracker.components.Dashboard
   (:require [reagent.core :as reagent :refer [atom]]
+            [habit_tracker.components.Habit :as Habit]
             [habit_tracker.utils.view_handler :as view_handler]))
 
 (defn get-all-habits
@@ -15,4 +16,4 @@
       [:h4.addNew {:on-click #(view_handler/new-view-active)} "Add New Habit +"]]
     [:h2.title "Dashboard"]
     (for [habit @habits]
-      [:p habit])])
+      (Habit/render habit))])

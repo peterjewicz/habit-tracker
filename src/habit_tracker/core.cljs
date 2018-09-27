@@ -7,8 +7,6 @@
    [habit_tracker.components.Dashboard :as Dashboard]
    [habit_tracker.components.New :as New]))
 
-(println "This text is printed from src/habit_tracker/core.cljs. Go ahead and edit it and see reloading in action.")
-
 (defn multiply [a b] (* a b))
 
 (defn get-app-element []
