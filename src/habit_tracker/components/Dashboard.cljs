@@ -13,7 +13,9 @@
 (defn render []
   [:div.Dashboard
     [:div.Header
-      [:h4.addNew {:on-click #(view_handler/new-view-active)} "Add New Habit +"]]
+      ; [:h4.addNew {:on-click #(view_handler/new-view-active)} "Add New Habit +"]]
+    ]
     [:h2.title "Dashboard"]
     (for [habit @habits]
-      (Habit/render habit))])
+      (Habit/render habit))
+      [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]])

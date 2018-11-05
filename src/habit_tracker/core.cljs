@@ -3,7 +3,6 @@
    [goog.dom :as gdom]
    [reagent.core :as reagent :refer [atom]]
    [habit_tracker.utils.view_handler :as view_handler]
-   [habit_tracker.components.Habit :as Habit]
    [habit_tracker.components.Dashboard :as Dashboard]
    [habit_tracker.components.New :as New]))
 

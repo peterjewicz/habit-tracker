@@ -38,4 +38,4 @@
     [:input {:type "text"
              :value @new-habit-name
              :on-change #(reset! new-habit-name (-> % .-target .-value))}]
-    [:p {:on-click #(add-new-habit)} "Add Test"]])
+    [:button {:on-click #(add-new-habit)} "Add New Habit"]])

@@ -3,7 +3,7 @@
 body, html {
   padding: 0;
   margin: 0;
-  background: #444;
+  background: #323643;
   color: white;
   font-size: 16px;
 }
@@ -13,24 +13,53 @@ h2{font-size: 2rem; margin: 0; padding: 0;}
 h3{font-size: 1.5rem; margin: 0; padding: 0;}
 h4{font-size: 1.25rem; margin: 0; padding: 0;}
 
+button {
+  background: #39ADFF;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
 
 .Header .addNew {
   cursor: pointer;
 }
 
+.addNewButton {
+  position: fixed;
+  bottom: 0px;
+  right: 25px;
+  background: #24DC25;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  transition: .25s;
+}
+.addNewButton:active {
+  background: #1fc220;
+}
+
 
 /* TODO we need to use some reset so we don't have to keep declaring border-box on all elements with padding */
 .Habit {
-  background: #666;
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #111;
+  background: #44495C;
+  border-top: 1px solid #353947;
+  border-bottom: 1px solid #353947;
+  width: 90%;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 6px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .Habit .title {
-  text-align: center;
   width: 100%;
+  text-transform: uppercase;
   box-sizing: border-box;
 }
 
@@ -45,8 +74,4 @@ h4{font-size: 1.25rem; margin: 0; padding: 0;}
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.Habit .button-wrapper button{
-  width: 100px;
 }
