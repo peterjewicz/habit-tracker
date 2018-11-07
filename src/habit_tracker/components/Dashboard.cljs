@@ -15,5 +15,5 @@
     [:div.Header]
     [:h2.title "Dashboard"]
     (doall (for [habit @habits]
-      (Habit/render habit)))
+      [Habit/render habit]))
       [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]])

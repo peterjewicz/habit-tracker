@@ -1,11 +1,12 @@
 (ns habit_tracker.components.Habit
   (:require [reagent.core :as reagent :refer [atom]]
+            [habit_tracker.components.Habit_view :as Habit_view]
             [habit_tracker.utils.date_formatter :as date_formatter]))
 
 (defonce is-complete (atom "Not Done Today"))
 
-;TODO don't let two of the same days
-(defn complete-habit [title]
+; TODO don't let two of the same days
+(defn complete-habit [title is-complete]
   (reset! is-complete "Completed")
   (js/console.log @is-complete)
   (let [completedDays (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) title)))]
@@ -24,10 +25,14 @@
       (do (reset! is-complete "Not Done Today")))
     (do (reset! is-complete "Not Done Today")))))
 
+
 (defn render [title]
-  (get-done-today title)
-  [:div.Habit
-    [:h3.title title]
-    [:p.status @is-complete]
-    [:div.button-wrapper
-      [:button {:on-click #(complete-habit title)} "Complete"]]])
+  (let [is-details-active (atom "")
+        is-complete (atom (get-done-today title))] ;; <-- not included in `render`
+    (fn []  ;; That returns a function  <-- `render` is from here down
+      [:div.Habit
+        (Habit_view/render title is-details-active)
+        [:h3.title {:on-click #(reset! is-details-active "active")} title]
+        [:p.status @is-complete]
+        [:div.button-wrapper
+          [:button {:on-click #(complete-habit title is-complete)} "Complete"]]])))
