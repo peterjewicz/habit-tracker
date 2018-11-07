@@ -3,12 +3,9 @@
             [habit_tracker.components.Habit_view :as Habit_view]
             [habit_tracker.utils.date_formatter :as date_formatter]))
 
-(defonce is-complete (atom "Not Done Today"))
-
 ; TODO don't let two of the same days
 (defn complete-habit [title is-complete]
   (reset! is-complete "Completed")
-  (js/console.log @is-complete)
   (let [completedDays (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) title)))]
   (.setItem
         (.-localStorage js/window) title
@@ -21,9 +18,9 @@
   (if habit-completed-days
     ; We only need to check the last one as it's the most recent
     (if (= (last habit-completed-days) (date_formatter/format-todays-date))
-      (reset! is-complete "Completed")
-      (do (reset! is-complete "Not Done Today")))
-    (do (reset! is-complete "Not Done Today")))))
+      "Completed"
+      "Not Done Today")
+    "Not Done Today")))
 
 
 (defn render [title]

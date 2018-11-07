@@ -33,6 +33,7 @@
 
 (defn render []
   [:div.New
+    [:p.close {:on-click #(view_handler/home-view-active)} "X"]
     [:h2.title "New Page"]
     [:p {:on-click #(view_handler/home-view-active)} "Back to Dashboard"]
     [:input {:type "text"

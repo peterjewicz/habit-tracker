@@ -4,4 +4,5 @@
 
 (defn render [title opened]
   [:div.Habit-View {:class @opened}
-    [:h3.title title]])
+    [:h3.title title]
+    [:p.close {:on-click #(reset! opened "")} "X"]])
