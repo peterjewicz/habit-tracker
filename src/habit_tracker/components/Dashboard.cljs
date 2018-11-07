@@ -12,10 +12,8 @@
 
 (defn render []
   [:div.Dashboard
-    [:div.Header
-      ; [:h4.addNew {:on-click #(view_handler/new-view-active)} "Add New Habit +"]]
-    ]
+    [:div.Header]
     [:h2.title "Dashboard"]
-    (for [habit @habits]
-      (Habit/render habit))
+    (doall (for [habit @habits]
+      (Habit/render habit)))
       [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]])

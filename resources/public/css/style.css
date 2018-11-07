@@ -52,7 +52,7 @@ button {
   width: 90%;
   margin: 15px auto;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 25spx;
   display: flex;
   flex-wrap: wrap;
 }

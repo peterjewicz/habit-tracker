@@ -2,7 +2,6 @@
 (ns habit_tracker.utils.date_formatter)
 
 
-
 (defn format-todays-date
   "Returns todays date formated mm/dd/yyyy"
   []
