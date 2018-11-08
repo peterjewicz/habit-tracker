@@ -89,8 +89,16 @@ button {
   height: 100%;
   width: 100%;
   background: #323643;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .Habit-View.active {
   left: 0;
+}
+
+.Habit-View .close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
 }

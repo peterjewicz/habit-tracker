@@ -28,7 +28,7 @@
         is-complete (atom (get-done-today title))] ;; <-- not included in `render`
     (fn []  ;; That returns a function  <-- `render` is from here down
       [:div.Habit
-        (Habit_view/render title is-details-active)
+        [Habit_view/render title is-details-active]
         [:h3.title {:on-click #(reset! is-details-active "active")} title]
         [:p.status @is-complete]
         [:div.button-wrapper
