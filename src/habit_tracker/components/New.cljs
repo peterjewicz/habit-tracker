@@ -9,9 +9,11 @@
   "Adds a new habit to localStorge to pull from later"
   []
   (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))]
+    (if-not (some #{@new-habit-name} currentStorage)
     (.setItem
       (.-localStorage js/window) "habits"
-      (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name)))))
+      (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name))))
+      (js/alert "That Habit Already Exists")))
   (reset! new-habit-name ""))
 
 (defn get-habit
