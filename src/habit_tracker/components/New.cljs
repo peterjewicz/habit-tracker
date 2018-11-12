@@ -14,7 +14,8 @@
       (.-localStorage js/window) "habits"
       (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name))))
       (js/alert "That Habit Already Exists")))
-  (reset! new-habit-name ""))
+  (reset! new-habit-name "")
+  (js/alert "Habit Added"))
 
 (defn get-habit
   "Grabs a new habit by the key name"
@@ -35,8 +36,9 @@
 
 (defn render []
   [:div.New
+    [:div.Header
+      [:h2.title "New Habit"]]
     [:p.close {:on-click #(view_handler/home-view-active)} "X"]
-    [:h2.title "New Page"]
     [:p {:on-click #(view_handler/home-view-active)} "Back to Dashboard"]
     [:input {:type "text"
              :value @new-habit-name

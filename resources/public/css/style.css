@@ -7,21 +7,36 @@ body, html {
   color: white;
   font-size: 16px;
   overflow-x: hidden;
+  font-family: 'Niramit', sans-serif;
 }
 
 h1{font-size: 2.5rem; margin: 0; padding: 0;}
 h2{font-size: 2rem; margin: 0; padding: 0;}
 h3{font-size: 1.5rem; margin: 0; padding: 0;}
 h4{font-size: 1.25rem; margin: 0; padding: 0;}
+h1,h2,h3,h4{font-weight: 500;}
 
 button {
-  background: #39ADFF;
+  background: #5ca4d7;
   border: none;
   color: white;
   font-size: 1rem;
   padding: 10px;
   text-transform: uppercase;
   border: 1px solid white;
+  border-radius: 15px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.Header {
+  background: #5ca4d7;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 2px #000000;
 }
 
 .Header .addNew {
@@ -39,6 +54,7 @@ button {
   font-size: 2.5rem;
   border-radius: 50%;
   transition: .25s;
+  line-height: 35px;
 }
 .addNewButton:active {
   background: #1fc220;
@@ -48,18 +64,19 @@ button {
 /* TODO we need to use some reset so we don't have to keep declaring border-box on all elements with padding */
 .Habit {
   background: #44495C;
-  border-top: 1px solid #353947;
-  border-bottom: 1px solid #353947;
+  border-top: 1px solid #424655;
+  border-bottom: 1px solid #424655;
   width: 90%;
-  margin: 15px auto;
-  padding: 10px;
-  border-radius: 25spx;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .Habit .title {
-  width: 100%;
   text-transform: uppercase;
   box-sizing: border-box;
 }
@@ -68,7 +85,10 @@ button {
   width: 50%;
   box-sizing: border-box;
 }
-
+.Habit .title-wrapper {
+  width: 50%;
+  box-sizing: border-box;
+}
 .Habit .button-wrapper {
   width: 50%;
   box-sizing: border-box;
@@ -89,7 +109,6 @@ button {
   height: 100%;
   width: 100%;
   background: #323643;
-  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -100,5 +119,5 @@ button {
 .Habit-View .close {
   position: absolute;
   top: 0px;
-  right: 10px;
+  left: 10px;
 }

@@ -29,7 +29,9 @@
     (fn []  ;; That returns a function  <-- `render` is from here down
       [:div.Habit
         [Habit_view/render title is-details-active]
-        [:h3.title {:on-click #(reset! is-details-active "active")} title]
-        [:p.status @is-complete]
+        [:div.title-wrapper
+          [:h3.title {:on-click #(reset! is-details-active "active")} title]]
         [:div.button-wrapper
-          [:button {:on-click #(complete-habit title is-complete)} "Complete"]]])))
+          (if (= @is-complete "Not Done Today")
+            [:button {:on-click #(complete-habit title is-complete)} "Complete"]
+            "Completed For Today!")]])))

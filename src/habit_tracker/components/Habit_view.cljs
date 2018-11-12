@@ -8,7 +8,11 @@
 
 (defn render [title opened]
   (let [habit (get-habit title)]
+    (js/console.log habit)
     (fn []
     [:div.Habit-View {:class @opened}
-      [:h3.title title]
-      [:p.close {:on-click #(reset! opened "")} "X"]])))
+      [:div.Header
+        [:p.close {:on-click #(reset! opened "")} "X"]
+        [:h3.title title]]
+        [:div.Calendar
+          [:p "cal here"]]])))
