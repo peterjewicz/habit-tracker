@@ -49,7 +49,7 @@
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/habit_tracker.js"
                            :main habit-tracker.core
-                           :npm-deps {:fullcalendar "*"}
+                           :npm-deps {:moment "*"}
                            :install-deps true
                            :optimizations :advanced
                            :pretty-print false}}]}

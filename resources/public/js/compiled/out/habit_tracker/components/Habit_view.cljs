@@ -1,6 +1,6 @@
 (ns habit_tracker.components.Habit_view
   (:require [reagent.core :as reagent :refer [atom]]
-            ["fullcalendar" :as fullcalendar]))
+            [habit_tracker.components.calendar.Calendar :as Calendar]))
 
 (defn get-habit [habit]
   "Grabs the list of dates for a habit"
@@ -13,5 +13,5 @@
       [:div.Header
         [:p.close {:on-click #(reset! opened "")} "X"]
         [:h3.title title]]
-        [:div.Calendar
-          [:p "cal here"]]])))
+        [:div#Calendar
+          [Calendar/render]]])))
