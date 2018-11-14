@@ -6,18 +6,48 @@ goog.require('module$Applications$server$habit_tracker$node_modules$moment$momen
 habit_tracker.components.calendar.Calendar.get_current_month_days = (function habit_tracker$components$calendar$Calendar$get_current_month_days(){
 return module$Applications$server$habit_tracker$node_modules$moment$moment["default"]().daysInMonth("YYYY-MM");
 });
+habit_tracker.components.calendar.Calendar.get_day_display = (function habit_tracker$components$calendar$Calendar$get_day_display(offsetAmount,numberOfDays,currentCount){
+
+if((currentCount <= offsetAmount)){
+return "";
+} else {
+if((currentCount > (offsetAmount + numberOfDays))){
+return "";
+} else {
+return (currentCount - offsetAmount);
+}
+}
+});
+habit_tracker.components.calendar.Calendar.generate_table_row = (function habit_tracker$components$calendar$Calendar$generate_table_row(offsetAmount,numberOfDays,i){
+
+var x = (1);
+var row = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646)], null);
+while(true){
+if(cljs.core._EQ_.call(null,x,(8))){
+return row;
+} else {
+var G__28176 = (x + (1));
+var G__28177 = cljs.core.conj.call(null,row,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td","td",1479933353),habit_tracker.components.calendar.Calendar.get_day_display.call(null,offsetAmount,numberOfDays,(i + x))], null));
+x = G__28176;
+row = G__28177;
+continue;
+}
+break;
+}
+});
 habit_tracker.components.calendar.Calendar.generate_table_html = (function habit_tracker$components$calendar$Calendar$generate_table_html(numberOfDays){
 var offsetAmount = module$Applications$server$habit_tracker$node_modules$moment$moment["default"]().startOf("month").day();
+var loopTotal = (offsetAmount + numberOfDays);
 var i = (0);
-var html = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646)], null);
+var html = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tbody","tbody",-80678300)], null);
 while(true){
-if(cljs.core._EQ_.call(null,i,offsetAmount)){
+if((i >= loopTotal)){
 return html;
 } else {
-var G__28245 = (i + (1));
-var G__28246 = cljs.core.conj.call(null,html,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td","td",1479933353),i], null));
-i = G__28245;
-html = G__28246;
+var G__28178 = (i + (7));
+var G__28179 = cljs.core.conj.call(null,html,habit_tracker.components.calendar.Calendar.generate_table_row.call(null,offsetAmount,numberOfDays,i));
+i = G__28178;
+html = G__28179;
 continue;
 }
 break;
@@ -34,4 +64,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 ;})(monthDays))
 });
 
-//# sourceMappingURL=Calendar.js.map?rel=1542205219155
+//# sourceMappingURL=Calendar.js.map?rel=1542237921653

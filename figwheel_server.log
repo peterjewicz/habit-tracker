@@ -590,3 +590,223 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.585 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.048 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.805 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.775 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.629 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.861 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.761 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.935 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.795 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.209 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/calendar/Calendar.cljs   line:14  column:18  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.calendar.Calendar/row[0m
+
+  [36m10[0m  [36m    loopTotal (+ offsetAmount numberOfDays)][0m
+  [36m11[0m  [36m(loop [i 0[0m
+  [36m12[0m  [36m      html [:span [:tr]]][0m
+  [36m13[0m  [36m      (loop [x 0][0m
+  [33m14[0m  [1m            [row [:td]][0m
+  [0m  [0m  [33m             ^--- Use of undeclared Var habit_tracker.components.calendar.Calendar/row[0m
+  [36m15[0m  [36m            (if (= x 8)[0m
+  [36m16[0m  [36m              row[0m
+  [36m17[0m  [36m            (recur (inc x) (conj row offsetAmount))[0m
+  [36m18[0m  [36m        ))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/calendar/Calendar.cljs   line:16  column:19  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.calendar.Calendar/row[0m
+
+  [36m12[0m  [36mhtml [:span [:tr]]][0m
+  [36m13[0m  [36m(loop [x 0][0m
+  [36m14[0m  [36m      [row [:td]][0m
+  [36m15[0m  [36m      (if (= x 8)[0m
+  [33m16[0m  [1m        row[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var habit_tracker.components.calendar.Calendar/row[0m
+  [36m17[0m  [36m      (recur (inc x) (conj row offsetAmount))[0m
+  [36m18[0m  [36m  ))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/calendar/Calendar.cljs   line:17  column:38  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.calendar.Calendar/row[0m
+
+  [36m13[0m  [36m          (loop [x 0][0m
+  [36m14[0m  [36m                [row [:td]][0m
+  [36m15[0m  [36m                (if (= x 8)[0m
+  [36m16[0m  [36m                  row[0m
+  [33m17[0m  [1m                (recur (inc x) (conj row offsetAmount))[0m
+  [0m  [0m  [33m                                     ^--- Use of undeclared Var habit_tracker.components.calendar.Calendar/row[0m
+  [36m18[0m  [36m            ))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m[0m
+  [36m21[0m  [36m[0m
+  [36m22[0m  [36m          (if (= i offsetAmount)[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+[31mFailed to compile build :dev from ["src"] in 0.423 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/calendar/Calendar.cljs   line:17  column:17  ----[0m
+
+  [1mrecur argument count mismatch, expected: 1 args, got: 2 at line 17 src/habit_tracker/components/calendar/Calendar.cljs[0m
+
+  [36m15[0m  [36m    (if (= x 8)[0m
+  [36m16[0m  [36m      row[0m
+  [33m17[0m  [1m    (recur (inc x) (conj row offsetAmount))[0m
+  [0m  [0m  [33m    ^--- recur argument count mismatch, expected: 1 args, got: 2 at line 17 src/habit_tracker/components/calendar/Calendar.cljs[0m
+  [36m18[0m  [36m))[0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.647 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.909 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.468 seconds.[0m
+[36m----  Could not Read  src/habit_tracker/components/calendar/Calendar.cljs   line:24 ----[0m
+
+  [1m/Applications/server/habit-tracker/src/habit_tracker/components/calendar/Calendar.cljs [line 24, col 15] Unmatched delimiter ).[0m
+
+  [36m22[0m  [36m                  row[0m
+  [36m23[0m  [36m                (recur (inc x) (conj row [:td "test"]))[0m
+  [33m24[0m  [1m            ))))))))[0m
+  [0m  [0m  [33m            /Applications/server/habit-tracker/src/habit_tracker/components/calendar/Calendar.cljs [line 24, col 15] Unmatched delimiter ).[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m[0m
+  [36m27[0m  [36m; (js/console.log (.daysInMonth (moment) "YYYY-MM") )[0m
+
+[36m----  Reader Error : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.649 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.768 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.881 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.233 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.736 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.687 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.752 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.751 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.558 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.621 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.833 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.787 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.818 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.701 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.655 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/calendar/Calendar.cljs   line:18  column:41  ----[0m
+
+  [1mWrong number of args (3) passed to habit_tracker.components.calendar.Calendar/get-day-display[0m
+
+  [36m14[0m  [36m         row [:tr]][0m
+  [36m15[0m  [36m        (if (= x 8)[0m
+  [36m16[0m  [36m          row[0m
+  [36m17[0m  [36m        (do[0m
+  [33m18[0m  [1m          (recur (inc x) (conj row [:td (get-day-display offsetAmount numberOfDays (+ i x))])))[0m
+  [0m  [0m  [33m                                        ^--- Wrong number of args (3) passed to habit_tracker.components.calendar.Calendar/get-day-display[0m
+  [36m19[0m  [36m          )))[0m
+  [36m20[0m  [36m[0m
+  [36m21[0m  [36m(defn generate-table-html [numberOfDays][0m
+  [36m22[0m  [36m  (let [offsetAmount (.day (.startOf (moment) "month"))[0m
+  [36m23[0m  [36m        loopTotal (+ offsetAmount numberOfDays)][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.974 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.642 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.451 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/calendar/Calendar.cljs   line:9  column:3  ----[0m
+
+  [1mToo few arguments to if at line 9 src/habit_tracker/components/calendar/Calendar.cljs[0m
+
+  [36m 8[0m  [36m(defn get-day-display [offsetAmount numberOfDays currentCount][0m
+  [33m 9[0m  [1m  (if (< currentCount offsetAmount))[0m
+  [0m  [0m  [33m  ^--- Too few arguments to if at line 9 src/habit_tracker/components/calendar/Calendar.cljs[0m
+  [36m10[0m  [36m    ""[0m
+  [36m11[0m  [36m    (if (> currentCount (+ offsetAmount numberOfDays))[0m
+  [36m12[0m  [36m    ""[0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.395 seconds.[0m
+[36m----  Could not Read  src/habit_tracker/components/calendar/Calendar.cljs   line:52 ----[0m
+
+  [1m/Applications/server/habit-tracker/src/habit_tracker/components/calendar/Calendar.cljs [line 52, col 1] Unexpected EOF while reading item 7 of list, starting at line 8 and column 1.[0m
+
+[36m----  Reader Error : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.987 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.772 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.634 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.597 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.583 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.926 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js

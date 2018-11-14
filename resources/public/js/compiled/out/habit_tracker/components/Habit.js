@@ -41,4 +41,4 @@ return habit_tracker.components.Habit.complete_habit.call(null,title,is_complete
 ;})(is_details_active,is_complete))
 });
 
-//# sourceMappingURL=Habit.js.map?rel=1542205219179
+//# sourceMappingURL=Habit.js.map?rel=1542237921680
