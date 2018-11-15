@@ -11,9 +11,6 @@
 (defn get-current-streak [currentStreak currentDate dates]
   (let [compareToDate (peek dates)
         currentToCompare (moment currentDate)]
-        (js/console.log compareToDate)
-        (js/console.log currentToCompare)
-        (js/console.log (.diff currentToCompare (moment compareToDate) "days"))
     (if (= 1 (.diff currentToCompare (moment compareToDate) "days"))
       (inc currentStreak)
       0)))
@@ -21,8 +18,8 @@
 (defn compare-streaks [currentStreak longestStreak]
   (if (> currentStreak longestStreak)
     currentStreak
-    longestStreak)
-  )
+    longestStreak))
+
 ; TODO need to look at this as it will display 0 for a single day streak,
 ; we need to change the inc in the if to increment if the dates is initially larger than 0 as then it
 ; should always be at least a streak of 1 we can probably use current streak to check this
@@ -41,10 +38,23 @@
                  longestStreak (compare-streaks currentStreak longestStreak)]
                  (recur currentStreak longestStreak dates)))))
 
+(defn get-current-streak-length [dates]
+  "Itterates through the list of dates and gets the current consecutive streak"
+  (let [todaysDate  (moment)
+        lastDate (peek dates)
+        dateList dates]
+        (if (or (= lastDate (.format todaysDate "MM/DD/YYYY")) (= 1 (.diff todaysDate (moment lastDate) "days")))
+        (do
+          (loop [currentStreak 1
+                 lastDate (peek dateList)
+                 dateList (pop dateList)]
+             (if (= 1 (.diff (moment lastDate) (moment (last dateList)) "days"))
+              (recur (inc currentStreak) (peek dateList) (pop dateList))
+              currentStreak
+              ))) 0)))
 
 (defn render [title opened]
   (let [habit (get-habit title)]
-    ; (js/console.log (get-longest-streak ["11/12/2018", "11/14/2018", "11/15/2018"]))
     (fn []
     [:div.Habit-View {:class @opened}
       [:div.Header
@@ -55,5 +65,5 @@
         [:div.Stats]
           [:h3 "Stats"]
           [:h4 (str "Total: " (count habit))]
-          [:h4 (str "Longest Streak: " (get-longest-streak ["11/12/2018", "11/14/2018", "11/15/2018", "11/16/2018"]))]
-          [:h4 "Current Streak: "]])))
+          [:h4 (str "Longest Streak: " (get-longest-streak habit))]
+          [:h4 (str "Current Streak: " (get-current-streak-length habit))]])))

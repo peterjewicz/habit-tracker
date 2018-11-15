@@ -11,12 +11,6 @@ return cljs.core.js__GT_clj.call(null,JSON.parse(window.localStorage.getItem(hab
 habit_tracker.components.Habit_view.get_current_streak = (function habit_tracker$components$Habit_view$get_current_streak(currentStreak,currentDate,dates){
 var compareToDate = cljs.core.peek.call(null,dates);
 var currentToCompare = module$Applications$server$habit_tracker$node_modules$moment$moment["default"](currentDate);
-console.log(compareToDate);
-
-console.log(currentToCompare);
-
-console.log(currentToCompare.diff(module$Applications$server$habit_tracker$node_modules$moment$moment["default"](compareToDate),"days"));
-
 if(cljs.core._EQ_.call(null,(1),currentToCompare.diff(module$Applications$server$habit_tracker$node_modules$moment$moment["default"](compareToDate),"days"))){
 return (currentStreak + (1));
 } else {
@@ -47,15 +41,42 @@ var currentDate = cljs.core.peek.call(null,dates__$1);
 var dates__$2 = cljs.core.pop.call(null,dates__$1);
 var currentStreak__$1 = habit_tracker.components.Habit_view.get_current_streak.call(null,currentStreak,currentDate,dates__$2);
 var longestStreak__$1 = habit_tracker.components.Habit_view.compare_streaks.call(null,currentStreak__$1,longestStreak);
-var G__28341 = currentStreak__$1;
-var G__28342 = longestStreak__$1;
-var G__28343 = dates__$2;
-currentStreak = G__28341;
-longestStreak = G__28342;
-dates__$1 = G__28343;
+var G__28542 = currentStreak__$1;
+var G__28543 = longestStreak__$1;
+var G__28544 = dates__$2;
+currentStreak = G__28542;
+longestStreak = G__28543;
+dates__$1 = G__28544;
 continue;
 }
 break;
+}
+});
+habit_tracker.components.Habit_view.get_current_streak_length = (function habit_tracker$components$Habit_view$get_current_streak_length(dates){
+
+var todaysDate = module$Applications$server$habit_tracker$node_modules$moment$moment["default"]();
+var lastDate = cljs.core.peek.call(null,dates);
+var dateList = dates;
+if(((cljs.core._EQ_.call(null,lastDate,todaysDate.format("MM/DD/YYYY"))) || (cljs.core._EQ_.call(null,(1),todaysDate.diff(module$Applications$server$habit_tracker$node_modules$moment$moment["default"](lastDate),"days"))))){
+var currentStreak = (1);
+var lastDate__$1 = cljs.core.peek.call(null,dateList);
+var dateList__$1 = cljs.core.pop.call(null,dateList);
+while(true){
+if(cljs.core._EQ_.call(null,(1),module$Applications$server$habit_tracker$node_modules$moment$moment["default"](lastDate__$1).diff(module$Applications$server$habit_tracker$node_modules$moment$moment["default"](cljs.core.last.call(null,dateList__$1)),"days"))){
+var G__28545 = (currentStreak + (1));
+var G__28546 = cljs.core.peek.call(null,dateList__$1);
+var G__28547 = cljs.core.pop.call(null,dateList__$1);
+currentStreak = G__28545;
+lastDate__$1 = G__28546;
+dateList__$1 = G__28547;
+continue;
+} else {
+return currentStreak;
+}
+break;
+}
+} else {
+return (0);
 }
 });
 habit_tracker.components.Habit_view.render = (function habit_tracker$components$Habit_view$render(title,opened){
@@ -66,9 +87,9 @@ return new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMP
 return (function (){
 return cljs.core.reset_BANG_.call(null,opened,"");
 });})(habit))
-], null),"X"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3.title","h3.title",1837656649),title], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div#Calendar","div#Calendar",-706580000),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.calendar.Calendar.render,habit], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Stats","div.Stats",1931344051)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3","h3",2067611163),"Stats"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),["Total: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.count.call(null,habit))].join('')], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),["Longest Streak: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(habit_tracker.components.Habit_view.get_longest_streak.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, ["11/12/2018","11/14/2018","11/15/2018","11/16/2018"], null)))].join('')], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),"Current Streak: "], null)], null);
+], null),"X"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3.title","h3.title",1837656649),title], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div#Calendar","div#Calendar",-706580000),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.calendar.Calendar.render,habit], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Stats","div.Stats",1931344051)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3","h3",2067611163),"Stats"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),["Total: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.count.call(null,habit))].join('')], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),["Longest Streak: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(habit_tracker.components.Habit_view.get_longest_streak.call(null,habit))].join('')], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h4","h4",2004862993),["Current Streak: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(habit_tracker.components.Habit_view.get_current_streak_length.call(null,habit))].join('')], null)], null);
 });
 ;})(habit))
 });
 
-//# sourceMappingURL=Habit_view.js.map?rel=1542291967333
+//# sourceMappingURL=Habit_view.js.map?rel=1542324442044
