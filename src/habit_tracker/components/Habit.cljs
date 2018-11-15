@@ -34,4 +34,4 @@
         [:div.button-wrapper
           (if (= @is-complete "Not Done Today")
             [:button {:on-click #(complete-habit title is-complete)} "Complete"]
-            "Completed For Today!")]])))
+            [:span {:on-click #(reset! is-details-active "active")} "Completed For Today!"])]])))

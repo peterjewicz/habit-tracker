@@ -61,6 +61,24 @@ button {
   background: #1fc220;
 }
 
+/* NEW SCREEN STLYES */
+.New {
+  position: absolute;
+  top: 0;
+  left: 200%;
+  transition: all .5s;
+  height: 100%;
+  width: 100%;
+  background: #323643;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+/* TODO see if we can get this to be active to be consistent */
+.New.true {
+  left: 0;
+}
+
 
 /* TODO we need to use some reset so we don't have to keep declaring border-box on all elements with padding */
 .Habit {
@@ -89,6 +107,9 @@ button {
 .Habit .title-wrapper {
   width: 50%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .Habit .button-wrapper {
   width: 50%;

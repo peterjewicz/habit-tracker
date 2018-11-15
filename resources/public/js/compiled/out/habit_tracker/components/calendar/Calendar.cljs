@@ -13,29 +13,35 @@
     ""
     (- currentCount offsetAmount))))
 
-(defn generate-table-row [offsetAmount numberOfDays i]
+(defn generate-table-row [offsetAmount numberOfDays i currentMonth currentYear date-values]
   "Generates the table HTML"
   (loop [x 1
          row [:tr]]
         (if (= x 8)
           row
-          (recur (inc x) (conj row [:td (get-day-display offsetAmount numberOfDays (+ i x))])))))
+          (do
+              (if ( some #{(str currentMonth "/" (- (+ i x) offsetAmount) "/" currentYear)} date-values)
+              (recur (inc x) (conj row [:td.active (get-day-display offsetAmount numberOfDays (+ i x))]))
+              (recur (inc x) (conj row [:td (get-day-display offsetAmount numberOfDays (+ i x))]))))
+          )))
 
-(defn generate-table-html [numberOfDays]
+(defn generate-table-html [numberOfDays currentMonth currentYear date-values]
   (let [offsetAmount (.day (.startOf (moment) "month"))
         loopTotal (+ offsetAmount numberOfDays)]
     (loop [i 0
           html [:tbody]]
           (if (>= i loopTotal)
             html ; Our end condition and output
-          (recur (+ i 7) (conj html (generate-table-row offsetAmount numberOfDays i)))))))
+          (recur (+ i 7) (conj html (generate-table-row offsetAmount numberOfDays i currentMonth currentYear date-values)))))))
 
 
-(defn render []
-  (let [monthDays (get-current-month-days)]
-    (generate-table-html monthDays)
+(defn render [dates]
+  (let [monthDays (get-current-month-days)
+        currentMonth 11
+        currentYear 2018]
     (fn []
     [:div.Calendar
+      (.format (moment) "MMMM")
       [:table.Calendar-wrapper
         [:tr
           [:th "Sun"]
@@ -45,4 +51,4 @@
           [:th "Thur"]
           [:th "Fri"]
           [:th "Sat"]]
-          (generate-table-html monthDays)]])))
+          (generate-table-html monthDays currentMonth currentYear dates)]])))

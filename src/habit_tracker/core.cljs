@@ -13,10 +13,10 @@
 
 (defn Root []
   [:div.MainWrapper
-   (if (:add-new @view_handler/active-view)
-    (New/render))
-   (if (:dashboard @view_handler/active-view)
-    (Dashboard/render))])
+   ; (if (:add-new @view_handler/active-view)
+    (New/render view_handler/active-view)
+   ; (if (:dashboard @view_handler/active-view)
+    (Dashboard/render)])
 
 (defn mount [el]
   (reagent/render-component [Root] el))

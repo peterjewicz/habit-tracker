@@ -1,0 +1,13 @@
+/* CALENDAR STYLES */
+table {
+  width: 100%;
+  padding: 0 5px;
+}
+
+td {
+  text-align: center;
+}
+
+td.active {
+  background: #5ca4d7;
+}

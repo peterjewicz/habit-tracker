@@ -34,8 +34,8 @@
   ; remove item is hte same as get habit with just a .removeItem instead of get we can add that later
 
 
-(defn render []
-  [:div.New
+(defn render [active]
+  [:div.New {:class (:add-new @active)}
     [:div.Header
       [:h2.title "New Habit"]]
     [:p.close {:on-click #(view_handler/home-view-active)} "X"]

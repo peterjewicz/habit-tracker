@@ -36,9 +36,13 @@ return cljs.core.reset_BANG_.call(null,is_details_active,"active");
 return (function (){
 return habit_tracker.components.Habit.complete_habit.call(null,title,is_complete);
 });})(is_details_active,is_complete))
-], null),"Complete"], null):"Completed For Today!")], null)], null);
+], null),"Complete"], null):new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (is_details_active,is_complete){
+return (function (){
+return cljs.core.reset_BANG_.call(null,is_details_active,"active");
+});})(is_details_active,is_complete))
+], null),"Completed For Today!"], null))], null)], null);
 });
 ;})(is_details_active,is_complete))
 });
 
-//# sourceMappingURL=Habit.js.map?rel=1542237921680
+//# sourceMappingURL=Habit.js.map?rel=1542291967357

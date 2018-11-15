@@ -70,7 +70,7 @@ goog.addDependency("../habit_tracker/components/New.js", ['habit_tracker.compone
 goog.addDependency("../habit_tracker/utils/date_formatter.js", ['habit_tracker.utils.date_formatter'], ['cljs.core']);
 goog.addDependency("../node_modules/moment/moment.js", ['module$Applications$server$habit_tracker$node_modules$moment$moment'], []);
 goog.addDependency("../habit_tracker/components/calendar/Calendar.js", ['habit_tracker.components.calendar.Calendar'], ['reagent.core', 'cljs.core', 'module$Applications$server$habit_tracker$node_modules$moment$moment']);
-goog.addDependency("../habit_tracker/components/Habit_view.js", ['habit_tracker.components.Habit_view'], ['reagent.core', 'cljs.core', 'habit_tracker.components.calendar.Calendar']);
+goog.addDependency("../habit_tracker/components/Habit_view.js", ['habit_tracker.components.Habit_view'], ['reagent.core', 'cljs.core', 'habit_tracker.components.calendar.Calendar', 'module$Applications$server$habit_tracker$node_modules$moment$moment']);
 goog.addDependency("../habit_tracker/components/Habit.js", ['habit_tracker.components.Habit'], ['habit_tracker.utils.date_formatter', 'reagent.core', 'cljs.core', 'habit_tracker.components.Habit_view']);
 goog.addDependency("../habit_tracker/components/Dashboard.js", ['habit_tracker.components.Dashboard'], ['habit_tracker.components.Habit', 'reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler']);
 goog.addDependency("../habit_tracker/core.js", ['habit_tracker.core'], ['goog.dom', 'reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler', 'habit_tracker.components.New', 'habit_tracker.components.Dashboard']);
