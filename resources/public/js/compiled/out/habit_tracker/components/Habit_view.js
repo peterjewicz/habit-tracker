@@ -41,12 +41,12 @@ var currentDate = cljs.core.peek.call(null,dates__$1);
 var dates__$2 = cljs.core.pop.call(null,dates__$1);
 var currentStreak__$1 = habit_tracker.components.Habit_view.get_current_streak.call(null,currentStreak,currentDate,dates__$2);
 var longestStreak__$1 = habit_tracker.components.Habit_view.compare_streaks.call(null,currentStreak__$1,longestStreak);
-var G__28542 = currentStreak__$1;
-var G__28543 = longestStreak__$1;
-var G__28544 = dates__$2;
-currentStreak = G__28542;
-longestStreak = G__28543;
-dates__$1 = G__28544;
+var G__27889 = currentStreak__$1;
+var G__27890 = longestStreak__$1;
+var G__27891 = dates__$2;
+currentStreak = G__27889;
+longestStreak = G__27890;
+dates__$1 = G__27891;
 continue;
 }
 break;
@@ -63,12 +63,12 @@ var lastDate__$1 = cljs.core.peek.call(null,dateList);
 var dateList__$1 = cljs.core.pop.call(null,dateList);
 while(true){
 if(cljs.core._EQ_.call(null,(1),module$Applications$server$habit_tracker$node_modules$moment$moment["default"](lastDate__$1).diff(module$Applications$server$habit_tracker$node_modules$moment$moment["default"](cljs.core.last.call(null,dateList__$1)),"days"))){
-var G__28545 = (currentStreak + (1));
-var G__28546 = cljs.core.peek.call(null,dateList__$1);
-var G__28547 = cljs.core.pop.call(null,dateList__$1);
-currentStreak = G__28545;
-lastDate__$1 = G__28546;
-dateList__$1 = G__28547;
+var G__27892 = (currentStreak + (1));
+var G__27893 = cljs.core.peek.call(null,dateList__$1);
+var G__27894 = cljs.core.pop.call(null,dateList__$1);
+currentStreak = G__27892;
+lastDate__$1 = G__27893;
+dateList__$1 = G__27894;
 continue;
 } else {
 return currentStreak;
@@ -92,4 +92,4 @@ return cljs.core.reset_BANG_.call(null,opened,"");
 ;})(habit))
 });
 
-//# sourceMappingURL=Habit_view.js.map?rel=1542324442044
+//# sourceMappingURL=Habit_view.js.map?rel=1542374872716
