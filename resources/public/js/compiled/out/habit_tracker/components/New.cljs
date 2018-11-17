@@ -37,9 +37,8 @@
 (defn render [active]
   [:div.New {:class (:add-new @active)}
     [:div.Header
+      [:p.close {:on-click #(view_handler/home-view-active)} "X"]
       [:h2.title "New Habit"]]
-    [:p.close {:on-click #(view_handler/home-view-active)} "X"]
-    [:p {:on-click #(view_handler/home-view-active)} "Back to Dashboard"]
     [:input {:type "text"
              :value @new-habit-name
              :on-change #(reset! new-habit-name (-> % .-target .-value))}]

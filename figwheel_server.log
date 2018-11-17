@@ -2479,3 +2479,82 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.719 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.347 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.703 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.617 seconds.[0m
+[36m----  Could not Read  src/habit_tracker/components/Habit_view.cljs   line:69 ----[0m
+
+  [1m/Applications/server/habit-tracker/src/habit_tracker/components/Habit_view.cljs [line 69, col 77] Unmatched delimiter ).[0m
+
+  [36m67[0m  [36m[:h4 (str "Total: " (count habit))][0m
+  [36m68[0m  [36m[:h4 (str "Longest Streak: " (get-longest-streak habit))][0m
+  [33m69[0m  [1m[:h4 (str "Current Streak: " (get-current-streak-length habit))]])))[0m
+  [0m  [0m  [33m/Applications/server/habit-tracker/src/habit_tracker/components/Habit_view.cljs [line 69, col 77] Unmatched delimiter ).[0m
+
+[36m----  Reader Error : Please see src/habit_tracker/components/Habit_view.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.271 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.682 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.396 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css

@@ -1,9 +1,17 @@
 /* some style */
 /* TODO we need to integrate SASS here, look up how we can hook that into flywheel compilation */
+/* We also need to clean up some of the comments, leaving then during dev to revert some design changes  */
 body, html {
   padding: 0;
   margin: 0;
-  background: #323643;
+  /* background: #323643; */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17c5e4+0,173392+100 */
+  background: #17c5e4; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #17c5e4 0%, #173392 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #17c5e4 0%,#173392 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #17c5e4 0%,#173392 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17c5e4', endColorstr='#173392',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  height: 100%;
   color: white;
   font-size: 16px;
   overflow-x: hidden;
@@ -17,7 +25,8 @@ h4{font-size: 1.25rem; margin: 0; padding: 0;}
 h1,h2,h3,h4{font-weight: 500;}
 
 button {
-  background: #5ca4d7;
+  /* background: #5ca4d7; */
+  background: transparent;
   border: none;
   color: white;
   font-size: 1rem;
@@ -32,11 +41,11 @@ button {
 }
 
 .Header {
-  background: #5ca4d7;
+  background: #177ab6;
   padding: 15px 0;
   margin-bottom: 25px;
   text-align: center;
-  box-shadow: 0px 0px 8px 2px #000000;
+  box-shadow: 0px -1px 20px 2px #000000;
   text-transform: uppercase;
 }
 
@@ -69,7 +78,13 @@ button {
   transition: all .5s;
   height: 100%;
   width: 100%;
-  background: #323643;
+  /* background: #323643; */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17c5e4+0,173392+100 */
+  background: #17c5e4; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #17c5e4 0%, #173392 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #17c5e4 0%,#173392 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #17c5e4 0%,#173392 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17c5e4', endColorstr='#173392',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   box-sizing: border-box;
   z-index: 3;
 }
@@ -79,12 +94,18 @@ button {
   left: 0;
 }
 
+.New .close {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
 
 /* TODO we need to use some reset so we don't have to keep declaring border-box on all elements with padding */
 .Habit {
-  background: #44495C;
-  border-top: 1px solid #424655;
-  border-bottom: 1px solid #424655;
+  background: #0d2c54;
+  /* border-top: 1px solid #424655;
+  border-bottom: 1px solid #424655; */
   width: 90%;
   margin: 25px auto;
   padding: 25px;
@@ -130,8 +151,15 @@ button {
   transition: all .5s;
   height: 100%;
   width: 100%;
-  background: #323643;
+  /* background: #323643; */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17c5e4+0,173392+100 */
+  background: #17c5e4; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #17c5e4 0%, #173392 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #17c5e4 0%,#173392 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #17c5e4 0%,#173392 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17c5e4', endColorstr='#173392',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .Habit-View.active {
@@ -142,4 +170,12 @@ button {
   position: absolute;
   top: 0px;
   left: 10px;
+}
+
+.Habit-View .Stats {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #177ab6;
 }

@@ -51,11 +51,10 @@
         currentYear 2018]
     (fn []
     [:div.Calendar
-      (.format (moment @currentMonth "MM") "MMMM")
-      ; TODO the below is not safe
-      [:p {:on-click #(swap! currentMonth (fn [current] (increment-month current)))} "->"]
-      [:p {:on-click #(swap! currentMonth (fn [current] (deincrement-month current)))} "<-"]
-      [:p @currentMonth]
+      [:div.Calendar-Header
+        [:p {:on-click #(swap! currentMonth (fn [current] (deincrement-month current)))} "<-"]
+        [:p (.format (moment @currentMonth "MM") "MMMM")]
+        [:p {:on-click #(swap! currentMonth (fn [current] (increment-month current)))} "->"]]
       [:table.Calendar-wrapper
         [:tr
           [:th "Sun"]

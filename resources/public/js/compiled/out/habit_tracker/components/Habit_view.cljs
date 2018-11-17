@@ -62,8 +62,8 @@
         [:h3.title title]]
         [:div#Calendar
           [Calendar/render habit]]
-        [:div.Stats]
+        [:div.Stats
           [:h3 "Stats"]
           [:h4 (str "Total: " (count habit))]
           [:h4 (str "Longest Streak: " (get-longest-streak habit))]
-          [:h4 (str "Current Streak: " (get-current-streak-length habit))]])))
+          [:h4 (str "Current Streak: " (get-current-streak-length habit))]]])))
