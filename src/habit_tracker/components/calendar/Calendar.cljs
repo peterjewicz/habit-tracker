@@ -26,7 +26,7 @@
           )))
 
 (defn generate-table-html [numberOfDays currentMonth currentYear date-values]
-  (let [offsetAmount (.day (.startOf (moment currentMonth "MM") "month"))
+  (let [offsetAmount (.day (.startOf (moment (str currentMonth "/" currentYear) "MM/YYYY") "month"))
         loopTotal (+ offsetAmount numberOfDays)]
     (loop [i 0
           html [:tbody]]
@@ -34,27 +34,36 @@
             html ; Our end condition and output
           (recur (+ i 7) (conj html (generate-table-row offsetAmount numberOfDays i currentMonth currentYear date-values)))))))
 
-; TODO change year for these
-(defn increment-month [current]
+(defn increment-year [currentYear]
+  (inc (js/parseInt currentYear)))
+
+(defn deincrement-year [currentYear]
+  (- (js/parseInt currentYear) 1))
+
+(defn increment-month [current currentYear]
   (if (= current 12)
-    1
+    (do
+      (swap! currentYear (fn [current] (increment-year current)))
+      1)
     (inc (js/parseInt current))))
 
-(defn deincrement-month [current]
+(defn deincrement-month [current currentYear]
   (if (= current 1)
-    12
+    (do
+      (swap! currentYear (fn [current] (deincrement-year current)))
+      12)
     (- (js/parseInt current) 1)))
 
 (defn render [dates]
   (let [monthDays (get-current-month-days)
         currentMonth (atom (.format (moment) "MM"))
-        currentYear 2018]
+        currentYear (atom (.format (moment) "YYYY"))]
     (fn []
     [:div.Calendar
       [:div.Calendar-Header
-        [:p {:on-click #(swap! currentMonth (fn [current] (deincrement-month current)))} "<-"]
-        [:p (.format (moment @currentMonth "MM") "MMMM")]
-        [:p {:on-click #(swap! currentMonth (fn [current] (increment-month current)))} "->"]]
+        [:p {:on-click #(swap! currentMonth (fn [current currentYear] (deincrement-month current currentYear)) currentYear)} "<-"]
+        [:p (str (.format (moment @currentMonth "MM") "MMMM") " " @currentYear)]
+        [:p {:on-click #(swap! currentMonth (fn [current currentYear] (increment-month current currentYear)) currentYear)} "->"]]
       [:table.Calendar-wrapper
         [:tr
           [:th "Sun"]
@@ -64,4 +73,4 @@
           [:th "Thur"]
           [:th "Fri"]
           [:th "Sat"]]
-          (generate-table-html monthDays @currentMonth currentYear dates)]])))
+          (generate-table-html monthDays @currentMonth @currentYear dates)]])))

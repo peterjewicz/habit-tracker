@@ -36,6 +36,11 @@ button {
   border-radius: 15px;
 }
 
+button:focus {
+  color: #0d2c54;
+  background: white;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -103,7 +108,7 @@ button {
 
 /* TODO we need to use some reset so we don't have to keep declaring border-box on all elements with padding */
 .Habit {
-  background: #0d2c54;
+  background: #1e4e8d;
   /* border-top: 1px solid #424655;
   border-bottom: 1px solid #424655; */
   width: 90%;
@@ -177,5 +182,5 @@ button {
   margin: 0 auto;
   margin-top: 25px;
   padding-top: 20px;
-  border-top: 1px solid #177ab6;
+  border-top: 1px solid #1e4e8d;
 }
