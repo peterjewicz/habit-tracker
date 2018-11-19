@@ -14,7 +14,7 @@ body, html {
   height: 100%;
   color: white;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: 'Niramit', sans-serif;
 }
 
@@ -81,6 +81,15 @@ input {
 }
 .addNewButton:active {
   background: #1fc220;
+}
+
+.Dashboard {
+
+}
+
+.Dashboard-content {
+  overflow-y: scroll;
+  height: calc(100vh - 85px);
 }
 
 /* NEW SCREEN STLYES */

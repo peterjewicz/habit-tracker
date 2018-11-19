@@ -2779,3 +2779,219 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.685 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.111 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.852 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.82 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.762 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.86 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.776 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.596 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.718 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:12  column:9  ----[0m
+
+  [1mWrong number of args (2) passed to habit_tracker.components.New/render[0m
+
+  [36m 8[0m  [36m(fn [][0m
+  [36m 9[0m  [36m  (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))[0m
+  [36m10[0m  [36m        habits (atom currentStorage)][0m
+  [36m11[0m  [36m    [:div.Dashboard[0m
+  [33m12[0m  [1m      (New/render view_handler/active-view habits)[0m
+  [0m  [0m  [33m      ^--- Wrong number of args (2) passed to habit_tracker.components.New/render[0m
+  [36m13[0m  [36m      [:div.Header[0m
+  [36m14[0m  [36m      [:h3.title.uppercase "Your Habits"]][0m
+  [36m15[0m  [36m      (doall (for [habit @habits][0m
+  [36m16[0m  [36m        [Habit/render habit]))[0m
+  [36m17[0m  [36m        [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]])))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.827 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.707 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/New.cljs   line:48  column:28  ----[0m
+
+  [1mWrong number of args (1) passed to habit_tracker.components.New/add-new-habit[0m
+
+  [36m44[0m  [36m[:input {:type "text"[0m
+  [36m45[0m  [36m         :value @new-habit-name[0m
+  [36m46[0m  [36m         :placeholder "Habit Name"[0m
+  [36m47[0m  [36m         :on-change #(reset! new-habit-name (-> % .-target .-value))}][0m
+  [33m48[0m  [1m[:button {:on-click #(add-new-habit habits)} "Add New Habit"]]])[0m
+  [0m  [0m  [33m                     ^--- Wrong number of args (1) passed to habit_tracker.components.New/add-new-habit[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/New.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.823 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.643 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.674 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.633 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.799 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.815 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.604 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.743 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.726 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.748 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Habit_view.cljs   line:59  column:28  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Habit_view/habits[0m
+
+  [36m55[0m  [36m[:div.Header[0m
+  [36m56[0m  [36m  [:p.close {:on-click #(reset! opened "")} "X"][0m
+  [36m57[0m  [36m  [:h3.title title]][0m
+  [36m58[0m  [36m  [:div#Calendar[0m
+  [33m59[0m  [1m    [Calendar/render habits]][0m
+  [0m  [0m  [33m                     ^--- Use of undeclared Var habit_tracker.components.Habit_view/habits[0m
+  [36m60[0m  [36m  [:div.Stats[0m
+  [36m61[0m  [36m    [:h2.Stats--header "Stats"][0m
+  [36m62[0m  [36m    [:h4 (str "Total: " (count habits))][0m
+  [36m63[0m  [36m    [:h4 (str "Longest Streak: " (get-longest-streak habits))][0m
+  [36m64[0m  [36m    [:h4 (str "Current Streak: " (get-current-streak-length habits))]]])))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Habit_view.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/Habit_view.cljs   line:62  column:38  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Habit_view/habits[0m
+
+  [36m58[0m  [36m[:div#Calendar[0m
+  [36m59[0m  [36m  [Calendar/render habits]][0m
+  [36m60[0m  [36m[:div.Stats[0m
+  [36m61[0m  [36m  [:h2.Stats--header "Stats"][0m
+  [33m62[0m  [1m  [:h4 (str "Total: " (count habits))][0m
+  [0m  [0m  [33m                             ^--- Use of undeclared Var habit_tracker.components.Habit_view/habits[0m
+  [36m63[0m  [36m  [:h4 (str "Longest Streak: " (get-longest-streak habits))][0m
+  [36m64[0m  [36m  [:h4 (str "Current Streak: " (get-current-streak-length habits))]]])))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Habit_view.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/Habit_view.cljs   line:63  column:60  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Habit_view/habits[0m
+
+  [36m59[0m  [36m  [Calendar/render habits]][0m
+  [36m60[0m  [36m[:div.Stats[0m
+  [36m61[0m  [36m  [:h2.Stats--header "Stats"][0m
+  [36m62[0m  [36m  [:h4 (str "Total: " (count habits))][0m
+  [33m63[0m  [1m  [:h4 (str "Longest Streak: " (get-longest-streak habits))][0m
+  [0m  [0m  [33m                                                   ^--- Use of undeclared Var habit_tracker.components.Habit_view/habits[0m
+  [36m64[0m  [36m  [:h4 (str "Current Streak: " (get-current-streak-length habits))]]])))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Habit_view.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/Habit_view.cljs   line:64  column:67  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Habit_view/habits[0m
+
+  [36m60[0m  [36m[:div.Stats[0m
+  [36m61[0m  [36m  [:h2.Stats--header "Stats"][0m
+  [36m62[0m  [36m  [:h4 (str "Total: " (count habits))][0m
+  [36m63[0m  [36m  [:h4 (str "Longest Streak: " (get-longest-streak habits))][0m
+  [33m64[0m  [1m  [:h4 (str "Current Streak: " (get-current-streak-length habits))]]])))[0m
+  [0m  [0m  [33m                                                          ^--- Use of undeclared Var habit_tracker.components.Habit_view/habits[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Habit_view.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.067 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.796 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.594 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.811 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.733 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.099 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.666 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.791 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.704 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.829 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.663 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.433 seconds.[0m
+[36m----  Could not Read  src/habit_tracker/components/Dashboard.cljs   line:18 ----[0m
+
+  [1m/Applications/server/habit-tracker/src/habit_tracker/components/Dashboard.cljs [line 18, col 80] Unmatched delimiter ].[0m
+
+  [36m16[0m  [36m(doall (for [habit @habits][0m
+  [36m17[0m  [36m  [Habit/render habit]))[0m
+  [33m18[0m  [1m  [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]]])))[0m
+  [0m  [0m  [33m  /Applications/server/habit-tracker/src/habit_tracker/components/Dashboard.cljs [line 18, col 80] Unmatched delimiter ].[0m
+
+[36m----  Reader Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.103 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.804 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.752 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css

@@ -3,11 +3,6 @@
             [habit_tracker.components.calendar.Calendar :as Calendar]
             ["moment" :as moment]))
 
-(defn get-habit [habit]
-  "Grabs the list of dates for a habit"
-  (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) habit))))
-
-
 (defn get-current-streak [currentStreak currentDate dates]
   (let [compareToDate (peek dates)
         currentToCompare (moment currentDate)]
@@ -53,17 +48,17 @@
               currentStreak
               ))) 0)))
 
-(defn render [title opened]
-  (let [habit (get-habit title)]
+(defn render [habits title opened]
+  (let [test 1]
     (fn []
     [:div.Habit-View {:class @opened}
       [:div.Header
         [:p.close {:on-click #(reset! opened "")} "X"]
         [:h3.title title]]
         [:div#Calendar
-          [Calendar/render habit]]
+          [Calendar/render habits]]
         [:div.Stats
           [:h2.Stats--header "Stats"]
-          [:h4 (str "Total: " (count habit))]
-          [:h4 (str "Longest Streak: " (get-longest-streak habit))]
-          [:h4 (str "Current Streak: " (get-current-streak-length habit))]]])))
+          [:h4 (str "Total: " (count @habits))]
+          [:h4 (str "Longest Streak: " (get-longest-streak @habits))]
+          [:h4 (str "Current Streak: " (get-current-streak-length @habits))]]])))

@@ -79,4 +79,4 @@
           [:th "Thur"]
           [:th "Fri"]
           [:th "Sat"]]
-          (generate-table-html @monthDays @currentMonth @currentYear dates)]])))
+          (generate-table-html @monthDays @currentMonth @currentYear @dates)]])))

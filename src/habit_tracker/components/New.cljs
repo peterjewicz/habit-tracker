@@ -7,15 +7,17 @@
 ; TODO move these to a localStorage helper - we'll need similar functionality all across the app.
 (defn add-new-habit
   "Adds a new habit to localStorge to pull from later"
-  []
+  [habits]
   (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))]
     (if-not (some #{@new-habit-name} currentStorage)
-    (.setItem
-      (.-localStorage js/window) "habits"
-      (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name))))
+      (do
+        (.setItem
+          (.-localStorage js/window) "habits"
+          (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name))))
+          (swap! habits conj new-habit-name)
+          (js/alert "Habit Added"))
       (js/alert "That Habit Already Exists")))
-  (reset! new-habit-name "")
-  (js/alert "Habit Added"))
+  (reset! new-habit-name ""))
 
 (defn get-habit
   "Grabs a new habit by the key name"
@@ -31,10 +33,7 @@
   (js/console.log localStorageLength)))
 
 
-  ; remove item is hte same as get habit with just a .removeItem instead of get we can add that later
-
-
-(defn render [active]
+(defn render [active habits]
   [:div.New {:class (:add-new @active)}
     [:div.Header
       [:p.close {:on-click #(view_handler/home-view-active)} "X"]
@@ -45,4 +44,4 @@
                :value @new-habit-name
                :placeholder "Habit Name"
                :on-change #(reset! new-habit-name (-> % .-target .-value))}]
-      [:button {:on-click #(add-new-habit)} "Add New Habit"]]])
+      [:button {:on-click #(add-new-habit habits)} "Add New Habit"]]])
