@@ -13,7 +13,7 @@
 (defn render []
   [:div.Dashboard
     [:div.Header
-    [:h2.title.uppercase "Your Habits"]]
+    [:h3.title.uppercase "Your Habits"]]
     (doall (for [habit @habits]
       [Habit/render habit]))
       [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]])

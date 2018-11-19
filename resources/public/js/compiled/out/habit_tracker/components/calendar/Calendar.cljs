@@ -2,8 +2,8 @@
   (:require [reagent.core :as reagent :refer [atom]]
             ["moment" :as moment]))
 
-(defn get-current-month-days []
-  (.daysInMonth (moment) "YYYY-MM"))
+(defn get-current-month-days [currentMonth]
+  (.daysInMonth (moment currentMonth "MM") "YYYY-MM"))
 
 (defn get-day-display [offsetAmount numberOfDays currentCount]
   "Determines what to display for a particular table cell"
@@ -40,30 +40,36 @@
 (defn deincrement-year [currentYear]
   (- (js/parseInt currentYear) 1))
 
-(defn increment-month [current currentYear]
+(defn increment-month [current currentYear monthDays]
   (if (= current 12)
     (do
+      (reset! monthDays (get-current-month-days 1))
       (swap! currentYear (fn [current] (increment-year current)))
       1)
-    (inc (js/parseInt current))))
+    (do
+      (reset! monthDays (get-current-month-days (inc (js/parseInt current))))
+      (inc (js/parseInt current)))))
 
-(defn deincrement-month [current currentYear]
+(defn deincrement-month [current currentYear monthDays]
   (if (= current 1)
     (do
+      (reset! monthDays (get-current-month-days 12))
       (swap! currentYear (fn [current] (deincrement-year current)))
       12)
-    (- (js/parseInt current) 1)))
+    (do
+      (reset! monthDays (get-current-month-days (- (js/parseInt current) 1)))
+      (- (js/parseInt current) 1))))
 
 (defn render [dates]
-  (let [monthDays (get-current-month-days)
-        currentMonth (atom (.format (moment) "MM"))
-        currentYear (atom (.format (moment) "YYYY"))]
+  (let [currentMonth (atom (.format (moment) "MM"))
+        currentYear (atom (.format (moment) "YYYY"))
+        monthDays (atom (get-current-month-days @currentMonth))]
     (fn []
     [:div.Calendar
       [:div.Calendar-Header
-        [:p {:on-click #(swap! currentMonth (fn [current currentYear] (deincrement-month current currentYear)) currentYear)} "<-"]
-        [:p (str (.format (moment @currentMonth "MM") "MMMM") " " @currentYear)]
-        [:p {:on-click #(swap! currentMonth (fn [current currentYear] (increment-month current currentYear)) currentYear)} "->"]]
+        [:p.Calendar-arrow {:on-click #(swap! currentMonth (fn [current currentYear] (deincrement-month current currentYear monthDays)) currentYear monthDays)} "<-"]
+        [:p.Calendar-Title (str (.format (moment @currentMonth "MM") "MMMM") " " @currentYear)]
+        [:p.Calendar-arrow {:on-click #(swap! currentMonth (fn [current currentYear] (increment-month current currentYear monthDays)) currentYear monthDays)} "->"]]
       [:table.Calendar-wrapper
         [:tr
           [:th "Sun"]
@@ -73,4 +79,4 @@
           [:th "Thur"]
           [:th "Fri"]
           [:th "Sat"]]
-          (generate-table-html monthDays @currentMonth @currentYear dates)]])))
+          (generate-table-html @monthDays @currentMonth @currentYear dates)]])))

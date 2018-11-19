@@ -2664,3 +2664,118 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.775 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.218 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.86 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.758 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.77 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.916 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.709 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.864 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.818 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.765 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Notifying browser that CSS file changed: resources/public/css/calendar.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.893 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.777 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.882 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.673 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 2.205 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.236 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.892 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.91 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.594 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.874 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.868 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.071 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.528 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.894 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 2.256 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.683 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.864 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.441 seconds.[0m
+[36m----  Could not Read  src/habit_tracker/components/calendar/Calendar.cljs   line:81 ----[0m
+
+  [1m/Applications/server/habit-tracker/src/habit_tracker/components/calendar/Calendar.cljs [line 81, col 1] Unexpected EOF while reading item 6 of list, starting at line 43 and column 1.[0m
+
+[36m----  Reader Error : Please see src/habit_tracker/components/calendar/Calendar.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.704 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.601 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.685 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js

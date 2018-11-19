@@ -41,6 +41,14 @@ button:focus {
   background: white;
 }
 
+input {
+  width: 120px;
+  padding: 5px;
+  height: 20px;
+  border: none;
+  margin-right: 10px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -103,6 +111,10 @@ button:focus {
   position: absolute;
   top: 0px;
   left: 10px;
+}
+
+.New--content {
+  padding: 10px;
 }
 
 
@@ -183,4 +195,8 @@ button:focus {
   margin-top: 25px;
   padding-top: 20px;
   border-top: 1px solid #1e4e8d;
+}
+
+.Habit-View .Stats--header  {
+  margin-bottom: 10px;
 }

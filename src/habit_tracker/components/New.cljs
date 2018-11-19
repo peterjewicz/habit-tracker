@@ -38,8 +38,11 @@
   [:div.New {:class (:add-new @active)}
     [:div.Header
       [:p.close {:on-click #(view_handler/home-view-active)} "X"]
-      [:h2.title "New Habit"]]
-    [:input {:type "text"
-             :value @new-habit-name
-             :on-change #(reset! new-habit-name (-> % .-target .-value))}]
-    [:button {:on-click #(add-new-habit)} "Add New Habit"]])
+      [:h3.title "New Habit"]]
+    [:div.New--content
+      [:p "Add a new habit below"]
+      [:input {:type "text"
+               :value @new-habit-name
+               :placeholder "Habit Name"
+               :on-change #(reset! new-habit-name (-> % .-target .-value))}]
+      [:button {:on-click #(add-new-habit)} "Add New Habit"]]])
