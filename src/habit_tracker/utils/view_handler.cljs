@@ -2,7 +2,7 @@
 (ns habit_tracker.utils.view_handler
   (:require [reagent.core :as reagent :refer [atom]]))
 
-(defonce active-view (atom {:dashboard true :add-new false}))
+(defonce active-view (atom {:dashboard true :add-new false :tutorial false}))
 
 
 ; TODO create a generic function that sets all to false except the one passed in
@@ -10,9 +10,17 @@
 (defn home-view-active []
   (reset! active-view {
     :dashboard true
-    :add-new false}))
+    :add-new false
+    :tutorial false}))
 
 (defn new-view-active []
   (reset! active-view {
     :home false
-    :add-new true}))
+    :add-new true
+    :tutorial false}))
+
+(defn tutorial-view-active []
+  (reset! active-view {
+    :home false
+    :add-new false
+    :tutorial true}))

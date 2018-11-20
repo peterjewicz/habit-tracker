@@ -3004,3 +3004,203 @@ Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["s
 notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
 notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.0 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.749 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.689 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.743 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:15  column:9  ----[0m
+
+  [1mWrong number of args (2) passed to habit_tracker.components.Tutorial/render[0m
+
+  [36m11[0m  [36m    habits (atom currentStorage)[0m
+  [36m12[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m13[0m  [36m[:div.Dashboard[0m
+  [36m14[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [33m15[0m  [1m  (Tutorial/render view_handler/active-view habits)[0m
+  [0m  [0m  [33m  ^--- Wrong number of args (2) passed to habit_tracker.components.Tutorial/render[0m
+  [36m16[0m  [36m  [:div.Header[0m
+  [36m17[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m18[0m  [36m  [:div.Dashboard-content[0m
+  [36m19[0m  [36m    (doall (for [habit @habits][0m
+  [36m20[0m  [36m      [Habit/render habit]))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.221 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.967 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.649 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/utils/view_handler.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.659 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.891 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/utils/view_handler.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:14  column:10  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.utils.view_handler/tutorial-view-active[0m
+
+  [36m10[0m  [36m(let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))[0m
+  [36m11[0m  [36m      habits (atom currentStorage)[0m
+  [36m12[0m  [36m      firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m13[0m  [36m  (if (not firstTime)[0m
+  [33m14[0m  [1m    (view_handler/tutorial-view-active))[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var habit_tracker.utils.view_handler/tutorial-view-active[0m
+  [36m15[0m  [36m  [:div.Dashboard[0m
+  [36m16[0m  [36m    (New/render view_handler/active-view habits)[0m
+  [36m17[0m  [36m    (Tutorial/render view_handler/active-view)[0m
+  [36m18[0m  [36m    [:div.Header[0m
+  [36m19[0m  [36m    [:h3.title.uppercase "Your Habits"]][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.883 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.607 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/utils/view_handler.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.265 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.427 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.972 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.743 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.627 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.591 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.766 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.817 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.866 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Tutorial.cljs   line:15  column:1  ----[0m
+
+  [1mactivate-slide-2 at line 9 is being replaced[0m
+
+  [36m11[0m  [36m    :slide2 "active"[0m
+  [36m12[0m  [36m    :slide3 false[0m
+  [36m13[0m  [36m    :slide4 false}))[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m(defn activate-slide-2 [][0m
+  [0m  [0m  [33m^--- activate-slide-2 at line 9 is being replaced[0m
+  [36m16[0m  [36m  (reset! tutorial-slide-active {[0m
+  [36m17[0m  [36m    :slide2 "active"[0m
+  [36m18[0m  [36m    :slide3 "active"[0m
+  [36m19[0m  [36m    :slide4 false}))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Tutorial.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/Tutorial.cljs   line:21  column:1  ----[0m
+
+  [1mactivate-slide-2 at line 15 is being replaced[0m
+
+  [36m17[0m  [36m    :slide2 "active"[0m
+  [36m18[0m  [36m    :slide3 "active"[0m
+  [36m19[0m  [36m    :slide4 false}))[0m
+  [36m20[0m  [36m[0m
+  [33m21[0m  [1m(defn activate-slide-2 [][0m
+  [0m  [0m  [33m^--- activate-slide-2 at line 15 is being replaced[0m
+  [36m22[0m  [36m  (reset! tutorial-slide-active {[0m
+  [36m23[0m  [36m    :slide2 "active"[0m
+  [36m24[0m  [36m    :slide3 "active"[0m
+  [36m25[0m  [36m    :slide4 "active"}))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Tutorial.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/Tutorial.cljs   line:35  column:24  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Tutorial/activate-slide-3[0m
+
+  [36m31[0m  [36m  [:p "The Easy Way To Build New Habits Each Day"][0m
+  [36m32[0m  [36m  [:p {:on-click #(activate-slide-2)} "->"]][0m
+  [36m33[0m  [36m[:div.Tutorial-slide.slide2 {:class (:slide2 @tutorial-slide-active)}[0m
+  [36m34[0m  [36m  [:h3 "Quickly Add new Habits To Track Each Day"][0m
+  [33m35[0m  [1m  [:p {:on-click #(activate-slide-3)} "->"]][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var habit_tracker.components.Tutorial/activate-slide-3[0m
+  [36m36[0m  [36m[:div.Tutorial-slide.slide3[0m
+  [36m37[0m  [36m  [:h3 "One Tap To Complete Each Day"]][0m
+  [36m38[0m  [36m  [:p {:on-click #(activate-slide-4)} "->"][0m
+  [36m39[0m  [36m[:div.Tutorial-slide.slide4[0m
+  [36m40[0m  [36m  [:h3 "Keep Up With Your Progress and Streaks"]]])[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Tutorial.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/components/Tutorial.cljs   line:38  column:24  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Tutorial/activate-slide-4[0m
+
+  [36m34[0m  [36m  [:h3 "Quickly Add new Habits To Track Each Day"][0m
+  [36m35[0m  [36m  [:p {:on-click #(activate-slide-3)} "->"]][0m
+  [36m36[0m  [36m[:div.Tutorial-slide.slide3[0m
+  [36m37[0m  [36m  [:h3 "One Tap To Complete Each Day"]][0m
+  [33m38[0m  [1m  [:p {:on-click #(activate-slide-4)} "->"][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var habit_tracker.components.Tutorial/activate-slide-4[0m
+  [36m39[0m  [36m[:div.Tutorial-slide.slide4[0m
+  [36m40[0m  [36m  [:h3 "Keep Up With Your Progress and Streaks"]]])[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Tutorial.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.839 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.995 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.938 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.63 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Tutorial.cljs   line:41  column:29  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Tutorial/finish-tutorial[0m
+
+  [36m37[0m  [36m  [:h3 "One Tap To Complete Each Day"][0m
+  [36m38[0m  [36m  [:p {:on-click #(activate-slide-4)} "->"]][0m
+  [36m39[0m  [36m[:div.Tutorial-slide.slide4 {:class (:slide4 @tutorial-slide-active)}[0m
+  [36m40[0m  [36m  [:h3 "Keep Up With Your Progress and Streaks"][0m
+  [33m41[0m  [1m  [:button {:on-click #(finish-tutorial)} "Get Started"]]])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var habit_tracker.components.Tutorial/finish-tutorial[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Tutorial.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.851 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.946 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.858 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js

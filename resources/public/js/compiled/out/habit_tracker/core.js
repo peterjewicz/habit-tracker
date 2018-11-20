@@ -32,4 +32,4 @@ habit_tracker.core.on_reload = (function habit_tracker$core$on_reload(){
 return habit_tracker.core.mount_app_element.call(null);
 });
 
-//# sourceMappingURL=core.js.map?rel=1542637715463
+//# sourceMappingURL=core.js.map?rel=1542723256314
