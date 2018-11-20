@@ -1,0 +1,36 @@
+/* CALENDAR STYLES */
+table {
+  width: 100%;
+  padding: 0 5px;
+}
+
+td {
+  text-align: center;
+}
+
+td.active {
+  background: #177ab6;
+  border: 1px solid white;
+}
+
+.Calendar-Header {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.Calendar-Header p {
+  padding: 0 5px;
+}
+
+.Calendar-Title {
+  min-width: 130px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+
+.Calendar-arrow {
+  font-size: 1.5rem;
+}

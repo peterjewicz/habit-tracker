@@ -39,7 +39,7 @@
       [:p.close {:on-click #(view_handler/home-view-active)} "X"]
       [:h3.title "New Habit"]]
     [:div.New--content
-      [:p "Add a new habit below"]
+      [:p "Add a new habit to track below"]
       [:input {:type "text"
                :value @new-habit-name
                :placeholder "Habit Name"

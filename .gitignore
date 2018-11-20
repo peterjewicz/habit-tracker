@@ -12,3 +12,10 @@ pom.xml
 .cpcache/
 .rebel_readline_history
 node_modules/
+
+# mobile ignores
+mobile/plugins
+mobile/platforms/ios/build/
+mobile/platforms/ios/www/
+mobile/platforms/ios/cordova/console.log
+mobile/node_modules
