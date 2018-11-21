@@ -34,15 +34,15 @@
     [:div.Tutorial-slide.slide1.active
       [:h1 "Welcome To Daily Habit Tracker!"]
       [:p "The Easy Way To Build New Habits Each Day"]
-      [:p {:on-click #(activate-slide-2)} "->"]]
+      [:p {:on-click #(activate-slide-2)} "Next ->"]]
     [:div.Tutorial-slide.slide2 {:class (:slide2 @tutorial-slide-active)}
       [:img {:src "images/tutorial-1.png"}]
       [:h3 "Quickly Add new Habits To Track Each Day"]
-      [:p {:on-click #(activate-slide-3)} "->"]]
+      [:p {:on-click #(activate-slide-3)} "Next ->"]]
     [:div.Tutorial-slide.slide3 {:class (:slide3 @tutorial-slide-active)}
       [:img {:src "images/tutorial-2.png"}]
       [:h3 "One Tap To Complete Each Day"]
-      [:p {:on-click #(activate-slide-4)} "->"]]
+      [:p {:on-click #(activate-slide-4)} "Next ->"]]
     [:div.Tutorial-slide.slide4 {:class (:slide4 @tutorial-slide-active)}
       [:img {:src "images/tutorial-3.png"}]
       [:h3 "Keep Up With Your Progress and Streaks"]

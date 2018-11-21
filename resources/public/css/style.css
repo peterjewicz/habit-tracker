@@ -145,6 +145,7 @@ input {
   /* border-top: 1px solid #424655;
   border-bottom: 1px solid #424655; */
   width: 90%;
+  max-width: 560px;
   margin: 25px auto;
   padding: 25px;
   border-radius: 25px;
@@ -274,4 +275,10 @@ input {
 .Tutorial img {
   margin: 0 auto;
   width: 75%;
+  max-width: 320px;
+}
+
+.Tutorial button {
+  max-width: 420px;
+  margin: 10px auto;
 }
