@@ -3204,3 +3204,25 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.858 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.737 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.261 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.25 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.646 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 3.633 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Tutorial.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css

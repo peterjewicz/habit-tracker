@@ -248,6 +248,8 @@ input {
 }
 
 .Tutorial .Tutorial-slide {
+  padding: 10px;
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 200%;
@@ -267,4 +269,9 @@ input {
 
 .Tutorial .Tutorial-slide.active {
   left: 0;
+}
+
+.Tutorial img {
+  margin: 0 auto;
+  width: 75%;
 }
