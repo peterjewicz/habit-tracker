@@ -15,8 +15,8 @@ node_modules/
 
 # mobile ignores
 mobile/plugins
-mobile/platforms/ios/**/Plugins
-mobile/platforms/ios/build/
-mobile/platforms/ios/www/
-mobile/platforms/ios/cordova/console.log
+mobile/platforms/
+mobile/platforms/
+mobile/platforms/
+mobile/platforms/
 mobile/node_modules
