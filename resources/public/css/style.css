@@ -27,6 +27,7 @@ body, html {
   color: white;
   font-size: 16px;
   overflow: hidden;
+  position: relative;
   font-family: 'Niramit', sans-serif;
 }
 
