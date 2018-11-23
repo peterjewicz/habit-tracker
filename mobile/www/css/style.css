@@ -81,7 +81,7 @@ input {
 
 .addNewButton {
   position: fixed;
-  bottom: 0px;
+  bottom: 20px;
   right: 25px;
   background: #24DC25;
   width: 50px;
