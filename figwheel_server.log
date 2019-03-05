@@ -3238,3 +3238,162 @@ Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
 Notifying browser that CSS file changed: resources/public/css/style.css
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.867 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.339 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/core.cljs   line:15  column:1  ----[0m
+
+  [1mUnknown dot form of (. FastClick -attach ("document.body")) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+
+  [36m13[0m  [36m   ; }[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m(.-attach FastClick "document.body")[0m
+  [0m  [0m  [33m^--- Unknown dot form of (. FastClick -attach ("document.body")) with classification [:cljs.analyzer/expr :cljs.analyzer/property :cljs.analyzer/expr][0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn multiply [a b] (* a b))[0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/core.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:15  column:10  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/FastClick[0m
+
+  [36m11[0m  [36m   ; 		FastClick.attach(document.body);[0m
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [36m14[0m  [36m[0m
+  [33m15[0m  [1m(.attach FastClick "document.body")[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit-tracker.core/FastClick[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(defn multiply [a b] (* a b))[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m(defn get-app-element [][0m
+  [36m20[0m  [36m  (gdom/getElement "app"))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.806 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:14  column:20  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/document[0m
+
+  [36m10[0m  [36m   ; 	document.addEventListener('DOMContentLoaded', function() {[0m
+  [36m11[0m  [36m   ; 		FastClick.attach(document.body);[0m
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [33m14[0m  [1m(.addEventListener document (fn [][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var habit-tracker.core/document[0m
+  [36m15[0m  [36m  (.attach FastClick "document.body")))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn multiply [a b] (* a b))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:15  column:12  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/FastClick[0m
+
+  [36m11[0m  [36m   ; 		FastClick.attach(document.body);[0m
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [36m14[0m  [36m(.addEventListener document (fn [][0m
+  [33m15[0m  [1m  (.attach FastClick "document.body")))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var habit-tracker.core/FastClick[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn multiply [a b] (* a b))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn get-app-element [][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.773 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:14  column:20  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/document[0m
+
+  [36m10[0m  [36m   ; 	document.addEventListener('DOMContentLoaded', function() {[0m
+  [36m11[0m  [36m   ; 		FastClick.attach(document.body);[0m
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [33m14[0m  [1m(.addEventListener document "DOMContentLoaded" (fn [][0m
+  [0m  [0m  [33m                   ^--- Use of undeclared Var habit-tracker.core/document[0m
+  [36m15[0m  [36m  (.attach FastClick "document.body")))[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn multiply [a b] (* a b))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:15  column:12  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/FastClick[0m
+
+  [36m11[0m  [36m   ; 		FastClick.attach(document.body);[0m
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [36m14[0m  [36m(.addEventListener document "DOMContentLoaded" (fn [][0m
+  [33m15[0m  [1m  (.attach FastClick "document.body")))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var habit-tracker.core/FastClick[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn multiply [a b] (* a b))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn get-app-element [][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.804 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:15  column:12  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/FastClick[0m
+
+  [36m11[0m  [36m   ; 		FastClick.attach(document.body);[0m
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [36m14[0m  [36m(.addEventListener "document" "DOMContentLoaded" (fn [][0m
+  [33m15[0m  [1m  (.attach FastClick "document.body")))[0m
+  [0m  [0m  [33m           ^--- Use of undeclared Var habit-tracker.core/FastClick[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m[0m
+  [36m18[0m  [36m(defn multiply [a b] (* a b))[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn get-app-element [][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.182 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/core.cljs   line:16  column:4  ----[0m
+
+  [1mUse of undeclared Var habit-tracker.core/alert[0m
+
+  [36m12[0m  [36m   ; 	}, false);[0m
+  [36m13[0m  [36m   ; }[0m
+  [36m14[0m  [36m(.addEventListener "document" "DOMContentLoaded" (fn [][0m
+  [36m15[0m  [36m  ; (.attach FastClick "document.body")[0m
+  [33m16[0m  [1m  (alert "test")[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var habit-tracker.core/alert[0m
+  [36m17[0m  [36m  ))[0m
+  [36m18[0m  [36m[0m
+  [36m19[0m  [36m[0m
+  [36m20[0m  [36m(defn multiply [a b] (* a b))[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/core.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.744 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.785 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.78 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.433 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/core.js

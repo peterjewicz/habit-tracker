@@ -7,6 +7,8 @@
 
 ; TODO create a generic function that sets all to false except the one passed in
 ; easier than writing a new function to handle every individual view
+; We have something better in the time tracker app, we can add that logic here
+; and just swap the current state into the atom
 (defn home-view-active []
   (reset! active-view {
     :dashboard true

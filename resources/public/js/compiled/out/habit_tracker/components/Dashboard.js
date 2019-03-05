@@ -17,26 +17,26 @@ habit_tracker.utils.view_handler.tutorial_view_active.call(null);
 }
 
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Dashboard","div.Dashboard",1804914400),habit_tracker.components.New.render.call(null,habit_tracker.utils.view_handler.active_view,habits),habit_tracker.components.Tutorial.render.call(null,habit_tracker.utils.view_handler.active_view),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Header","div.Header",-753829133),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3.title.uppercase","h3.title.uppercase",1537702661),"Your Habits"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Dashboard-content","div.Dashboard-content",-14814664),cljs.core.doall.call(null,(function (){var iter__4292__auto__ = ((function (currentStorage,habits,firstTime){
-return (function habit_tracker$components$Dashboard$render_$_iter__27506(s__27507){
+return (function habit_tracker$components$Dashboard$render_$_iter__21905(s__21906){
 return (new cljs.core.LazySeq(null,((function (currentStorage,habits,firstTime){
 return (function (){
-var s__27507__$1 = s__27507;
+var s__21906__$1 = s__21906;
 while(true){
-var temp__5457__auto__ = cljs.core.seq.call(null,s__27507__$1);
+var temp__5457__auto__ = cljs.core.seq.call(null,s__21906__$1);
 if(temp__5457__auto__){
-var s__27507__$2 = temp__5457__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__27507__$2)){
-var c__4290__auto__ = cljs.core.chunk_first.call(null,s__27507__$2);
+var s__21906__$2 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__21906__$2)){
+var c__4290__auto__ = cljs.core.chunk_first.call(null,s__21906__$2);
 var size__4291__auto__ = cljs.core.count.call(null,c__4290__auto__);
-var b__27509 = cljs.core.chunk_buffer.call(null,size__4291__auto__);
-if((function (){var i__27508 = (0);
+var b__21908 = cljs.core.chunk_buffer.call(null,size__4291__auto__);
+if((function (){var i__21907 = (0);
 while(true){
-if((i__27508 < size__4291__auto__)){
-var habit = cljs.core._nth.call(null,c__4290__auto__,i__27508);
-cljs.core.chunk_append.call(null,b__27509,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit], null));
+if((i__21907 < size__4291__auto__)){
+var habit = cljs.core._nth.call(null,c__4290__auto__,i__21907);
+cljs.core.chunk_append.call(null,b__21908,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit], null));
 
-var G__27510 = (i__27508 + (1));
-i__27508 = G__27510;
+var G__21909 = (i__21907 + (1));
+i__21907 = G__21909;
 continue;
 } else {
 return true;
@@ -44,13 +44,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__27509),habit_tracker$components$Dashboard$render_$_iter__27506.call(null,cljs.core.chunk_rest.call(null,s__27507__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__21908),habit_tracker$components$Dashboard$render_$_iter__21905.call(null,cljs.core.chunk_rest.call(null,s__21906__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__27509),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__21908),null);
 }
 } else {
-var habit = cljs.core.first.call(null,s__27507__$2);
-return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit], null),habit_tracker$components$Dashboard$render_$_iter__27506.call(null,cljs.core.rest.call(null,s__27507__$2)));
+var habit = cljs.core.first.call(null,s__21906__$2);
+return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit], null),habit_tracker$components$Dashboard$render_$_iter__21905.call(null,cljs.core.rest.call(null,s__21906__$2)));
 }
 } else {
 return null;
@@ -70,4 +70,4 @@ return habit_tracker.utils.view_handler.new_view_active.call(null);
 });
 });
 
-//# sourceMappingURL=Dashboard.js.map?rel=1542817780629
+//# sourceMappingURL=Dashboard.js.map?rel=1551826403637
