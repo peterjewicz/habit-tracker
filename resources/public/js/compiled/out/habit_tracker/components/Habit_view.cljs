@@ -49,7 +49,7 @@
               ))) 0)))
 
 (defn render [habits title opened]
-  (let [test 1]
+  (let [test (atom "")]
     (fn []
     [:div.Habit-View {:class @opened}
       [:div.Header

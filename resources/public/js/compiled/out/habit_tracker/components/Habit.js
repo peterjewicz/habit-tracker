@@ -52,4 +52,4 @@ return cljs.core.reset_BANG_.call(null,is_details_active,"active");
 ;})(is_details_active,is_complete,habits))
 });
 
-//# sourceMappingURL=Habit.js.map?rel=1542636580833
+//# sourceMappingURL=Habit.js.map?rel=1555715418890

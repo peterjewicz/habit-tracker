@@ -3,6 +3,14 @@ goog.provide('habit_tracker.components.calendar.Calendar');
 goog.require('cljs.core');
 goog.require('reagent.core');
 goog.require('module$Applications$server$habit_tracker$node_modules$moment$moment');
+habit_tracker.components.calendar.Calendar.check_false_on_month = (function habit_tracker$components$calendar$Calendar$check_false_on_month(date){
+
+if(cljs.core._EQ_.call(null,cljs.core.count.call(null,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(date)].join('')),(1))){
+return date;
+} else {
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.subs.call(null,[cljs.core.str.cljs$core$IFn$_invoke$arity$1(date)].join(''),(1)))].join('');
+}
+});
 habit_tracker.components.calendar.Calendar.get_current_month_days = (function habit_tracker$components$calendar$Calendar$get_current_month_days(currentMonth){
 return module$Applications$server$habit_tracker$node_modules$moment$moment["default"](currentMonth,"MM").daysInMonth("YYYY-MM");
 });
@@ -26,17 +34,23 @@ while(true){
 if(cljs.core._EQ_.call(null,x,(8))){
 return row;
 } else {
-if(cljs.core.truth_(cljs.core.some.call(null,cljs.core.PersistentHashSet.createAsIfByAssoc([[cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentMonth),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((i + x) - offsetAmount)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentYear)].join('')]),date_values))){
-var G__22317 = (x + (1));
-var G__22318 = cljs.core.conj.call(null,row,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.active","td.active",1072089856),habit_tracker.components.calendar.Calendar.get_day_display.call(null,offsetAmount,numberOfDays,(i + x))], null));
-x = G__22317;
-row = G__22318;
+if(cljs.core.truth_((function (){var or__3922__auto__ = cljs.core.some.call(null,cljs.core.PersistentHashSet.createAsIfByAssoc([[cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentMonth),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((i + x) - offsetAmount)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentYear)].join('')]),date_values);
+if(cljs.core.truth_(or__3922__auto__)){
+return or__3922__auto__;
+} else {
+return cljs.core.some.call(null,cljs.core.PersistentHashSet.createAsIfByAssoc([[cljs.core.str.cljs$core$IFn$_invoke$arity$1(habit_tracker.components.calendar.Calendar.check_false_on_month.call(null,currentMonth)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((i + x) - offsetAmount)),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentYear)].join('')]),date_values);
+}
+})())){
+var G__27726 = (x + (1));
+var G__27727 = cljs.core.conj.call(null,row,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.active","td.active",1072089856),habit_tracker.components.calendar.Calendar.get_day_display.call(null,offsetAmount,numberOfDays,(i + x))], null));
+x = G__27726;
+row = G__27727;
 continue;
 } else {
-var G__22319 = (x + (1));
-var G__22320 = cljs.core.conj.call(null,row,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td","td",1479933353),habit_tracker.components.calendar.Calendar.get_day_display.call(null,offsetAmount,numberOfDays,(i + x))], null));
-x = G__22319;
-row = G__22320;
+var G__27728 = (x + (1));
+var G__27729 = cljs.core.conj.call(null,row,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td","td",1479933353),habit_tracker.components.calendar.Calendar.get_day_display.call(null,offsetAmount,numberOfDays,(i + x))], null));
+x = G__27728;
+row = G__27729;
 continue;
 }
 }
@@ -52,10 +66,10 @@ while(true){
 if((i >= loopTotal)){
 return html;
 } else {
-var G__22321 = (i + (7));
-var G__22322 = cljs.core.conj.call(null,html,habit_tracker.components.calendar.Calendar.generate_table_row.call(null,offsetAmount,numberOfDays,i,currentMonth,currentYear,date_values));
-i = G__22321;
-html = G__22322;
+var G__27730 = (i + (7));
+var G__27731 = cljs.core.conj.call(null,html,habit_tracker.components.calendar.Calendar.generate_table_row.call(null,offsetAmount,numberOfDays,i,currentMonth,currentYear,date_values));
+i = G__27730;
+html = G__27731;
 continue;
 }
 break;
@@ -124,4 +138,4 @@ return habit_tracker.components.calendar.Calendar.increment_month.call(null,curr
 ;})(currentMonth,currentYear,monthDays))
 });
 
-//# sourceMappingURL=Calendar.js.map?rel=1542636580770
+//# sourceMappingURL=Calendar.js.map?rel=1555715418829
