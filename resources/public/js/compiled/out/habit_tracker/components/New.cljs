@@ -1,6 +1,7 @@
 (ns habit_tracker.components.New
   (:require [reagent.core :as reagent :refer [atom]]
-            [habit_tracker.utils.view_handler :as view_handler]))
+            [habit_tracker.utils.view_handler :as view_handler]
+            [fancy_alert.core :as fancy-alert]))
 
 (defonce new-habit-name (atom ""))
 
@@ -15,7 +16,10 @@
           (.-localStorage js/window) "habits"
           (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name))))
           (swap! habits conj new-habit-name)
-          (js/alert "Habit Added"))
+          (fancy-alert/fancy-alert
+            {:text "Habit Added!" :hideAfterN false
+            :styles {:background "#173392;" :z-index "900;" :color "white;"}
+            :buttonProperties {:buttonText "Okay"}}))
       (js/alert "That Habit Already Exists")))
   (reset! new-habit-name ""))
 

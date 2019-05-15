@@ -34,4 +34,4 @@ return habit_tracker.components.Tutorial.finish_tutorial.call(null);
 })], null),"Get Started"], null)], null)], null);
 });
 
-//# sourceMappingURL=Tutorial.js.map?rel=1551826403528
+//# sourceMappingURL=Tutorial.js.map?rel=1557923574885

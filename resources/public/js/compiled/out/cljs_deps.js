@@ -66,7 +66,7 @@ goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['cljsjs.
 goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'cljsjs.react.dom', 'reagent.debug']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
 goog.addDependency("../habit_tracker/utils/view_handler.js", ['habit_tracker.utils.view_handler'], ['reagent.core', 'cljs.core']);
-goog.addDependency("../habit_tracker/components/New.js", ['habit_tracker.components.New'], ['reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler']);
+goog.addDependency("../habit_tracker/components/New.js", ['habit_tracker.components.New'], ['reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler', 'fancy_alert.core']);
 goog.addDependency("../habit_tracker/utils/date_formatter.js", ['habit_tracker.utils.date_formatter'], ['cljs.core']);
 goog.addDependency("../node_modules/moment/moment.js", ['module$Applications$server$habit_tracker$node_modules$moment$moment'], []);
 goog.addDependency("../habit_tracker/components/calendar/Calendar.js", ['habit_tracker.components.calendar.Calendar'], ['reagent.core', 'cljs.core', 'module$Applications$server$habit_tracker$node_modules$moment$moment']);
@@ -75,3 +75,4 @@ goog.addDependency("../habit_tracker/components/Habit.js", ['habit_tracker.compo
 goog.addDependency("../habit_tracker/components/Tutorial.js", ['habit_tracker.components.Tutorial'], ['reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler']);
 goog.addDependency("../habit_tracker/components/Dashboard.js", ['habit_tracker.components.Dashboard'], ['habit_tracker.components.Habit', 'habit_tracker.components.Tutorial', 'reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler', 'habit_tracker.components.New']);
 goog.addDependency("../habit_tracker/core.js", ['habit_tracker.core'], ['goog.dom', 'reagent.core', 'cljs.core', 'habit_tracker.utils.view_handler', 'habit_tracker.components.New', 'habit_tracker.components.Dashboard']);
+goog.addDependency("../fancy_alert/core.js", ['fancy_alert.core'], ['cljs.core']);

@@ -3506,3 +3506,631 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.771 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/calendar/Calendar.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.493 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: cljs_calendar, could not locate cljs_calendar.cljs, cljs_calendar.cljc, or JavaScript source providing "cljs_calendar" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.642 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: cljs-calendar, could not locate cljs_calendar.cljs, cljs_calendar.cljc, or JavaScript source providing "cljs-calendar" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.088 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:10  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (newcal)[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.119 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.084 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:16  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (print newcal)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.77 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:16  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (print newcal)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.978 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:16  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (print newcal)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.119 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:16  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (print newcal)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.047 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:16  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (print newcal)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.891 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.694 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.794 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:9  ----[0m
+
+  [1mWrong number of args (0) passed to cljs.core/test[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (test)[0m
+  [0m  [0m  [33m  ^--- Wrong number of args (0) passed to cljs.core/test[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.052 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.035 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.752 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.902 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.922 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.809 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.987 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.943 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.377 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: cljs-calendar, could not locate cljs_calendar.cljs, cljs_calendar.cljc, or JavaScript source providing "cljs-calendar" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.158 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.382 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.345 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: cljs_calendar/cljs-calendar.core, could not locate cljs_calendar_SLASH_cljs_calendar/core.cljs, cljs_calendar_SLASH_cljs_calendar/core.cljc, or JavaScript source providing "cljs-calendar.core" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.267 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.441 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: cljs_calendar/cljs-calendar.core, could not locate cljs_calendar_SLASH_cljs_calendar/core.cljs, cljs_calendar_SLASH_cljs_calendar/core.cljc, or JavaScript source providing "cljs-calendar.core" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.923 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.371 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: cljs-calendar, could not locate cljs_calendar.cljs, cljs_calendar.cljc, or JavaScript source providing "cljs-calendar" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.953 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:18  column:25  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [36m17[0m  [36m  ; (test 967785236)[0m
+  [33m18[0m  [1m  (js/console.log newcal)[0m
+  [0m  [0m  [33m                  ^--- Use of undeclared Var habit_tracker.components.Dashboard/newcal[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m23[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.036 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.186 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:9  ----[0m
+
+  [1mWrong number of args (0) passed to cljs-calendar.core/render[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (cljs-calendar.core/render)[0m
+  [0m  [0m  [33m  ^--- Wrong number of args (0) passed to cljs-calendar.core/render[0m
+  [36m18[0m  [36m  (js/console.log cljs-calendar.core)[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.042 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.986 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.744 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.043 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.027 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.648 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.813 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.108 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.857 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.25 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.18 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Habit_view.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.727 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.158 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs   line:1  column:1  ----[0m
+
+  [1mOnly [lib.ns :only (names)] and optionally `:rename {from to}` specs supported in :use / :use-macros; offending spec: [fancy-alert] at line 1 src/habit_tracker/components/Dashboard.cljs[0m
+
+  [33m1[0m  [1m(ns habit_tracker.components.Dashboard[0m
+  [0m [0m  [33m^--- Only [lib.ns :only (names)] and optionally `:rename {from to}` specs supported in :use / :use-macros; offending spec: [fancy-alert] at line 1 src/habit_tracker/components/Dashboard.cljs[0m
+  [36m2[0m  [36m  (:require [reagent.core :as reagent :refer [atom]][0m
+  [36m3[0m  [36m            [habit_tracker.components.Habit :as Habit][0m
+  [36m4[0m  [36m            [habit_tracker.utils.view_handler :as view_handler][0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.227 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs   line:1  column:1  ----[0m
+
+  [1mnth not supported on this type: Symbol[0m
+
+  [33m1[0m  [1m(ns habit_tracker.components.Dashboard[0m
+  [0m [0m  [33m^--- nth not supported on this type: Symbol[0m
+  [36m2[0m  [36m  (:require [reagent.core :as reagent :refer [atom]][0m
+  [36m3[0m  [36m            [habit_tracker.components.Habit :as Habit][0m
+  [36m4[0m  [36m            [habit_tracker.utils.view_handler :as view_handler][0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.406 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: fancy-alert, could not locate fancy_alert.cljs, fancy_alert.cljc, or JavaScript source providing "fancy-alert" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.44 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: fancy_alert, could not locate fancy_alert.cljs, fancy_alert.cljc, or JavaScript source providing "fancy_alert" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 12.159 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.834 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.902 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.729 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:10  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/fancy-alert[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (fancy-alert {:text "This is test text" :hideAfterN false :styles {:background "red;" :color "white;"}})[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var habit_tracker.components.Dashboard/fancy-alert[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.976 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:10  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/fancy-alert[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (fancy-alert {:text "This is test text" :hideAfterN false :styles {:background "red;" :color "white;"}})[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var habit_tracker.components.Dashboard/fancy-alert[0m
+  [36m18[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m19[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m20[0m  [36m  [:div.Header[0m
+  [36m21[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+  [36m22[0m  [36m  [:div.Dashboard-content[0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.918 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.774 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[36m----  Compiler Warning on   src/habit_tracker/components/Dashboard.cljs   line:17  column:16  ----[0m
+
+  [1mUse of undeclared Var habit_tracker.components.Dashboard/fancy-alert[0m
+
+  [36m13[0m  [36m    firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))][0m
+  [36m14[0m  [36m(if (not firstTime)[0m
+  [36m15[0m  [36m  (view_handler/tutorial-view-active))[0m
+  [36m16[0m  [36m[:div.Dashboard[0m
+  [33m17[0m  [1m  (print fancy-alert)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var habit_tracker.components.Dashboard/fancy-alert[0m
+  [36m18[0m  [36m  ; (fancy-alert {:text "This is test text" :hideAfterN false :styles {:background "red;" :color "white;"}})[0m
+  [36m19[0m  [36m  (New/render view_handler/active-view habits)[0m
+  [36m20[0m  [36m  (Tutorial/render view_handler/active-view)[0m
+  [36m21[0m  [36m  [:div.Header[0m
+  [36m22[0m  [36m  [:h3.title.uppercase "Your Habits"]][0m
+
+[36m----  Compiler Warning : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.969 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.687 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.91 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.814 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.225 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs   line:1  column:1  ----[0m
+
+  [1mDon't know how to create ISeq from: clojure.lang.Symbol[0m
+
+  [33m1[0m  [1m(ns habit_tracker.components.Dashboard[0m
+  [0m [0m  [33m^--- Don't know how to create ISeq from: clojure.lang.Symbol[0m
+  [36m2[0m  [36m  (:require [reagent.core :as reagent :refer [atom]][0m
+  [36m3[0m  [36m            [habit_tracker.components.Habit :as Habit][0m
+  [36m4[0m  [36m            [habit_tracker.utils.view_handler :as view_handler][0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.452 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mInvalid :refer, var fancy_alert.core/fancy-alert does not exist [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.376 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mInvalid :refer, var fancy_alert.core/fancy-alert does not exist [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[31mFailed to compile build :dev from ["src"] in 0.361 seconds.[0m
+[36m----  Could not Analyze  src/habit_tracker/components/Dashboard.cljs  ----[0m
+
+  [1mNo such namespace: fancy_alert, could not locate fancy_alert.cljs, fancy_alert.cljc, or JavaScript source providing "fancy_alert" [0m
+
+[36m----  Analysis Error : Please see src/habit_tracker/components/Dashboard.cljs  ----[0m
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.755 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.874 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.123 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.046 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.72 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.861 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.837 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js

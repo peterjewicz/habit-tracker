@@ -9,4 +9,4 @@ var currentDate = (new Date());
 return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(((1) + currentDate.getMonth())),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentDate.getDate()),"/",cljs.core.str.cljs$core$IFn$_invoke$arity$1(currentDate.getFullYear())].join('');
 });
 
-//# sourceMappingURL=date_formatter.js.map?rel=1542636578740
+//# sourceMappingURL=date_formatter.js.map?rel=1557923573928
