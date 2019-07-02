@@ -2,6 +2,12 @@
   (:require [reagent.core :as reagent :refer [atom]]
             ["moment" :as moment]))
 
+(defn check-false-on-month [date]
+  "conditionally checks if the month has two digits and returns sub if so - used so dates can be written 04 or 4 for month and still resolve to true"
+  (if (= (count (str date)) 1)
+    date
+    (str (subs (str date) 1))))
+
 (defn get-current-month-days [currentMonth]
   (.daysInMonth (moment currentMonth "MM") "YYYY-MM"))
 
@@ -20,7 +26,8 @@
         (if (= x 8)
           row
           (do
-              (if ( some #{(str currentMonth "/" (- (+ i x) offsetAmount) "/" currentYear)} date-values)
+              (if (or ( some #{(str currentMonth "/" (- (+ i x) offsetAmount) "/" currentYear)} date-values)
+                  ( some #{(str (check-false-on-month currentMonth) "/" (- (+ i x) offsetAmount) "/" currentYear)} date-values))
               (recur (inc x) (conj row [:td.active (get-day-display offsetAmount numberOfDays (+ i x))]))
               (recur (inc x) (conj row [:td (get-day-display offsetAmount numberOfDays (+ i x))]))))
           )))

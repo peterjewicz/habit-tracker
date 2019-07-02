@@ -3,6 +3,21 @@
             [habit_tracker.components.calendar.Calendar :as Calendar]
             ["moment" :as moment]))
 
+(defn remove-habit-from-store [title habits]
+  (reset! habits (into [] (filter (fn [hab]
+        (not= hab title)) @habits))))
+
+(defn delete-habit [habit opened habits]
+  "we pass in opened so we can close the page from here - bit messy but meh..."
+  (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))]
+    (.setItem
+      (.-localStorage js/window) "habits"
+      (.stringify js/JSON (clj->js (filter (fn [hab]
+          (not= hab habit)) currentStorage))))
+    (.removeItem (.-localStorage js/window) habit)
+    (remove-habit-from-store habit habits))
+  (reset! opened "")) ; closes the page
+
 (defn get-current-streak [currentStreak currentDate dates]
   (let [compareToDate (peek dates)
         currentToCompare (moment currentDate)]
@@ -48,7 +63,7 @@
               currentStreak
               ))) 0)))
 
-(defn render [habits title opened]
+(defn render [habits title opened full-habits]
   (let [test (atom "")]
     (fn []
     [:div.Habit-View {:class @opened}
@@ -61,4 +76,6 @@
           [:h2.Stats--header "Stats"]
           [:h4 (str "Total: " (count @habits))]
           [:h4 (str "Longest Streak: " (get-longest-streak @habits))]
-          [:h4 (str "Current Streak: " (get-current-streak-length @habits))]]])))
+          [:h4 (str "Current Streak: " (get-current-streak-length @habits))]
+          [:p.delete "This action is permanent!"]
+          [:button.delete {:on-click #(delete-habit title opened full-habits)} "Delete Habit"]]])))

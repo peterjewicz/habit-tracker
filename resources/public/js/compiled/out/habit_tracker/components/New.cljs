@@ -15,7 +15,7 @@
         (.setItem
           (.-localStorage js/window) "habits"
           (.stringify js/JSON (clj->js(conj currentStorage @new-habit-name))))
-          (swap! habits conj new-habit-name)
+          (swap! habits conj @new-habit-name)
           (fancy-alert/fancy-alert
             {:text "Habit Added!" :hideAfterN false
             :styles {:background "#173392;" :z-index "900;" :color "white;"}

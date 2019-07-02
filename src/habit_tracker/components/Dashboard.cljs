@@ -6,10 +6,10 @@
             [habit_tracker.components.Tutorial :as Tutorial]))
 
 (defn render []
-  (fn []
-    (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))
-          habits (atom currentStorage)
-          firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))]
+  (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))
+        habits (atom currentStorage)
+        firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))]
+    (fn []
       (if (not firstTime)
         (view_handler/tutorial-view-active))
       [:div.Dashboard
@@ -19,5 +19,6 @@
         [:h3.title.uppercase "Your Habits"]]
         [:div.Dashboard-content
           (doall (for [habit @habits]
-            [Habit/render habit]))
+            [:div {:key habit}
+              [Habit/render habit habits]]))
             [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]]])))

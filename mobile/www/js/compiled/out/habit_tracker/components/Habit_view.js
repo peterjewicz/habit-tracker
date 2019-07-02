@@ -76,7 +76,7 @@ return (0);
 }
 });
 habit_tracker.components.Habit_view.render = (function habit_tracker$components$Habit_view$render(habits,title,opened){
-var test = (1);
+var test = reagent.core.atom.call(null,"");
 return ((function (test){
 return (function (){
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Habit-View","div.Habit-View",135581833),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),cljs.core.deref.call(null,opened)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Header","div.Header",-753829133),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p.close","p.close",-1878443002),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (test){
@@ -88,4 +88,4 @@ return cljs.core.reset_BANG_.call(null,opened,"");
 ;})(test))
 });
 
-//# sourceMappingURL=Habit_view.js.map?rel=1542636580801
+//# sourceMappingURL=Habit_view.js.map?rel=1557923574770
