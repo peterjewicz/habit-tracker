@@ -28,16 +28,16 @@
     "Not Done Today")))
 
 
-(defn render [title]
+(defn render [title habits]
   (let [is-details-active (atom "")
         is-complete (atom (get-done-today title))
-        habits (atom (get-habit title))] ;; <-- not included in `render`
+        habits-title (atom (get-habit title))] ;; <-- not included in `render`
     (fn []  ;; That returns a function  <-- `render` is from here down
       [:div.Habit
-        [Habit_view/render habits title is-details-active]
+        [Habit_view/render habits-title title is-details-active habits]
         [:div.title-wrapper
           [:h3.title {:on-click #(reset! is-details-active "active")} title]]
         [:div.button-wrapper
           (if (= @is-complete "Not Done Today")
-            [:button {:on-click #(complete-habit title is-complete habits)} "Complete"]
+            [:button {:on-click #(complete-habit title is-complete habits-title)} "Complete"]
             [:span {:on-click #(reset! is-details-active "active")} "Completed For Today!"])]])))

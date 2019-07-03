@@ -7,18 +7,18 @@
 
 (defn render []
   (let [currentStorage (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "habits")))
-        habits (atom currentStorage)
-        firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))]
+        habits (atom currentStorage)]
     (fn []
-      (if (not firstTime)
-        (view_handler/tutorial-view-active))
-      [:div.Dashboard
-        (New/render view_handler/active-view habits)
-        (Tutorial/render view_handler/active-view)
-        [:div.Header
-        [:h3.title.uppercase "Your Habits"]]
-        [:div.Dashboard-content
-          (doall (for [habit @habits]
-            [:div {:key habit}
-              [Habit/render habit habits]]))
-            [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]]])))
+      (let [firstTime (js->clj (.parse js/JSON (.getItem (.-localStorage js/window) "firstTime")))]
+        (if (not firstTime)
+          (view_handler/tutorial-view-active))
+        [:div.Dashboard
+          (New/render view_handler/active-view habits)
+          (Tutorial/render view_handler/active-view)
+          [:div.Header
+          [:h3.title.uppercase "Your Habits"]]
+          [:div.Dashboard-content
+            (doall (for [habit @habits]
+              [:div {:key habit}
+                [Habit/render habit habits]]))
+              [:p.addNewButton {:on-click #(view_handler/new-view-active)} "+"]]]))))

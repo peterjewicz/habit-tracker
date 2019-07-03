@@ -7,36 +7,37 @@ goog.require('habit_tracker.utils.view_handler');
 goog.require('habit_tracker.components.New');
 goog.require('habit_tracker.components.Tutorial');
 habit_tracker.components.Dashboard.render = (function habit_tracker$components$Dashboard$render(){
-return (function (){
 var currentStorage = cljs.core.js__GT_clj.call(null,JSON.parse(window.localStorage.getItem("habits")));
 var habits = reagent.core.atom.call(null,currentStorage);
 var firstTime = cljs.core.js__GT_clj.call(null,JSON.parse(window.localStorage.getItem("firstTime")));
+return ((function (currentStorage,habits,firstTime){
+return (function (){
 if(cljs.core.not.call(null,firstTime)){
 habit_tracker.utils.view_handler.tutorial_view_active.call(null);
 } else {
 }
 
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Dashboard","div.Dashboard",1804914400),habit_tracker.components.New.render.call(null,habit_tracker.utils.view_handler.active_view,habits),habit_tracker.components.Tutorial.render.call(null,habit_tracker.utils.view_handler.active_view),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Header","div.Header",-753829133),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h3.title.uppercase","h3.title.uppercase",1537702661),"Your Habits"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.Dashboard-content","div.Dashboard-content",-14814664),cljs.core.doall.call(null,(function (){var iter__4292__auto__ = ((function (currentStorage,habits,firstTime){
-return (function habit_tracker$components$Dashboard$render_$_iter__38101(s__38102){
+return (function habit_tracker$components$Dashboard$render_$_iter__28068(s__28069){
 return (new cljs.core.LazySeq(null,((function (currentStorage,habits,firstTime){
 return (function (){
-var s__38102__$1 = s__38102;
+var s__28069__$1 = s__28069;
 while(true){
-var temp__5457__auto__ = cljs.core.seq.call(null,s__38102__$1);
+var temp__5457__auto__ = cljs.core.seq.call(null,s__28069__$1);
 if(temp__5457__auto__){
-var s__38102__$2 = temp__5457__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__38102__$2)){
-var c__4290__auto__ = cljs.core.chunk_first.call(null,s__38102__$2);
+var s__28069__$2 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__28069__$2)){
+var c__4290__auto__ = cljs.core.chunk_first.call(null,s__28069__$2);
 var size__4291__auto__ = cljs.core.count.call(null,c__4290__auto__);
-var b__38104 = cljs.core.chunk_buffer.call(null,size__4291__auto__);
-if((function (){var i__38103 = (0);
+var b__28071 = cljs.core.chunk_buffer.call(null,size__4291__auto__);
+if((function (){var i__28070 = (0);
 while(true){
-if((i__38103 < size__4291__auto__)){
-var habit = cljs.core._nth.call(null,c__4290__auto__,i__38103);
-cljs.core.chunk_append.call(null,b__38104,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit], null));
+if((i__28070 < size__4291__auto__)){
+var habit = cljs.core._nth.call(null,c__4290__auto__,i__28070);
+cljs.core.chunk_append.call(null,b__28071,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),habit], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit,habits], null)], null));
 
-var G__38105 = (i__38103 + (1));
-i__38103 = G__38105;
+var G__28072 = (i__28070 + (1));
+i__28070 = G__28072;
 continue;
 } else {
 return true;
@@ -44,13 +45,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__38104),habit_tracker$components$Dashboard$render_$_iter__38101.call(null,cljs.core.chunk_rest.call(null,s__38102__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__28071),habit_tracker$components$Dashboard$render_$_iter__28068.call(null,cljs.core.chunk_rest.call(null,s__28069__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__38104),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__28071),null);
 }
 } else {
-var habit = cljs.core.first.call(null,s__38102__$2);
-return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit], null),habit_tracker$components$Dashboard$render_$_iter__38101.call(null,cljs.core.rest.call(null,s__38102__$2)));
+var habit = cljs.core.first.call(null,s__28069__$2);
+return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),habit], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [habit_tracker.components.Habit.render,habit,habits], null)], null),habit_tracker$components$Dashboard$render_$_iter__28068.call(null,cljs.core.rest.call(null,s__28069__$2)));
 }
 } else {
 return null;
@@ -68,6 +69,7 @@ return habit_tracker.utils.view_handler.new_view_active.call(null);
 });})(currentStorage,habits,firstTime))
 ], null),"+"], null)], null)], null);
 });
+;})(currentStorage,habits,firstTime))
 });
 
-//# sourceMappingURL=Dashboard.js.map?rel=1557924059272
+//# sourceMappingURL=Dashboard.js.map?rel=1562105901075

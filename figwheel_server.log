@@ -4571,3 +4571,15 @@ notifying browser that file changed:  resources/public/js/compiled/out/habit_tra
 Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
 [32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 1.0 seconds.[0m
 notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/New.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 2.194 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.889 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Compiling build :dev to "resources/public/js/compiled/habit_tracker.js" from ["src"]...
+[32mSuccessfully compiled build :dev to "resources/public/js/compiled/habit_tracker.js" in 0.76 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/habit_tracker/components/Dashboard.js
+Notifying browser that CSS file changed: resources/public/css/style.css
